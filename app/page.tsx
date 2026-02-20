@@ -1,78 +1,104 @@
 export default function Home() {
+  const experiences = [
+    {
+      title: "Student Ambassador",
+      org: "Alma Mater Studiorum – Università di Bologna",
+      date: "Feb 2026 — Present",
+      desc: "Representing the oldest university in the Western world in Bologna, Italy."
+    },
+    {
+      title: "Founder & CEO",
+      org: "NIS Media League / Football Association",
+      date: "Mar 2023 — May 2025",
+      desc: "Founded a league with 130+ participants, established 6 regional branches, and developed the digital ecosystem (web & social media)."
+    },
+    {
+      title: "Student Council Parliament Speaker",
+      org: "Nazarbayev Intellectual Schools",
+      date: "Jan 2023 — Feb 2025",
+      desc: "Led the student government at the top-tier school network in Kazakhstan."
+    },
+    {
+      title: "Assistant Economic Analyst (Internship)",
+      org: "Government of Kazakhstan (Akimat)",
+      date: "Jan 2024 — Sep 2024",
+      desc: "Agriculture management and economic analysis in Rayimbek and Talgar districts."
+    }
+  ];
+
+  const publications = [
+    {
+      title: "Price Rise: A Threat or a Chance?",
+      journal: "Ogni Alatau newspaper",
+      link: "https://ognialatau.kz/news/cat-1/30382/"
+    },
+    {
+      title: "Food Products in Kazakhstan: Causes and Solutions",
+      journal: "Central Asian Scientific Journal",
+      link: "https://cajournal.kz/vol/2024/vol4(23).pdf"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-[#fafafa] text-slate-900 font-sans selection:bg-blue-100">
-      {/* Главный контейнер с плавной анимацией появления */}
       <main className="max-w-2xl mx-auto px-6 py-20 animate-fade-in">
         
         {/* Header */}
         <header className="mb-20">
-          <h1 className="text-4xl font-extrabold tracking-tight mb-3 bg-gradient-to-r from-slate-900 to-slate-500 bg-clip-text text-transparent">
-            Zhangir Yerkassym
-          </h1>
-          <p className="text-lg text-slate-600 mb-6 font-medium">Software Engineer & AI Researcher</p>
+          <h1 className="text-4xl font-extrabold tracking-tight mb-3">Zhangir Yerkassym</h1>
+          <p className="text-lg text-slate-600 mb-6 italic">Economics & Finance at Università di Bologna</p>
           <div className="flex gap-5 text-sm font-semibold">
-            <a href="https://linkedin.com/in/zhangir-yerkassym-b48aab375/" target="_blank" className="text-blue-600 hover:text-blue-800 transition-colors border-b border-blue-100 hover:border-blue-600">LinkedIn</a>
-            <a href="https://github.com" target="_blank" className="text-blue-600 hover:text-blue-800 transition-colors border-b border-blue-100 hover:border-blue-600">GitHub</a>
-            <a href="mailto:your-email@ubc.ca" className="text-blue-600 hover:text-blue-800 transition-colors border-b border-blue-100 hover:border-blue-600">Email</a>
+            <a href="https://www.linkedin.com/in/zhangir-yerkassym-b48aab375/" target="_blank" className="text-blue-600 border-b border-blue-100 hover:border-blue-600">LinkedIn</a>
+            <a href="mailto:your-email@studio.unibo.it" className="text-blue-600 border-b border-blue-100 hover:border-blue-600">Email</a>
           </div>
         </header>
 
-        {/* About */}
-        <section className="mb-20">
-          <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400 mb-6">Background</h2>
-          <p className="text-[17px] leading-relaxed text-slate-700">
-            I am a student at the <span className="text-slate-900 font-semibold">University of British Columbia</span>, 
-            focusing on Computer Science and Mathematics. I'm passionate about building elegant solutions 
-            to complex problems, specifically in the realms of AI optimization and scalable systems.
-          </p>
-        </section>
-
-        {/* Experience - С красивой линией слева */}
-        <section className="mb-20">
-          <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400 mb-8">Experience</h2>
-          <div className="space-y-12 border-l-2 border-slate-100 ml-1 pl-8">
-            <div className="relative">
-              <div className="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-white border-4 border-blue-500"></div>
-              <div className="flex justify-between items-baseline mb-1">
-                <h3 className="font-bold text-slate-900">UBC Research Assistant</h3>
-                <span className="text-[11px] font-mono text-slate-400 bg-slate-50 px-2 py-1 rounded">2024 — PRES</span>
-              </div>
-              <p className="text-sm text-slate-500 mb-3">Department of Mathematics</p>
-              <p className="text-[15px] text-slate-600 leading-relaxed">
-                Analyzing algorithmic efficiency and implementing mathematical models for AI research.
-              </p>
+        {/* Education */}
+        <section className="mb-16">
+          <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400 mb-6">Education</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="font-bold text-slate-900">Alma Mater Studiorum – Università di Bologna</h3>
+              <p className="text-sm text-slate-600 font-medium">Laurea, Economics and Finance (2025 — 2028)</p>
+            </div>
+            <div>
+              <h3 className="font-bold text-slate-900">Nazarbayev Intellectual Schools (NIS)</h3>
+              <p className="text-sm text-slate-600">Grade 12, GPA 5.0/5.0 (2019 — 2025)</p>
             </div>
           </div>
         </section>
 
-        {/* Projects - Карточки */}
-        <section className="mb-20">
-          <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400 mb-8">Selected Projects</h2>
-          <div className="grid gap-6">
-            <div className="group p-6 rounded-2xl border border-slate-200/60 bg-white hover:border-blue-200 hover:shadow-xl hover:shadow-blue-500/5 transition-all duration-300">
-              <div className="flex justify-between items-start mb-3">
-                <h3 className="font-bold text-slate-900 group-hover:text-blue-600 transition-colors text-lg">
-                  AI Portfolio Engine
-                </h3>
-                <div className="flex gap-2">
-                  <span className="text-[9px] font-bold font-mono bg-slate-100 text-slate-500 px-2 py-1 rounded-md uppercase">Next.js</span>
-                  <span className="text-[9px] font-bold font-mono bg-blue-50 text-blue-500 px-2 py-1 rounded-md uppercase">TS</span>
-                </div>
+        {/* Experience */}
+        <section className="mb-16">
+          <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400 mb-8">Professional Experience</h2>
+          <div className="space-y-10 border-l border-slate-100 ml-1 pl-6">
+            {experiences.map((exp, i) => (
+              <div key={i} className="relative">
+                <div className="absolute -left-[29px] top-1.5 w-1.5 h-1.5 rounded-full bg-slate-300"></div>
+                <h3 className="font-bold text-slate-900 leading-tight">{exp.title}</h3>
+                <p className="text-xs text-blue-600 font-semibold mb-2">{exp.org} • {exp.date}</p>
+                <p className="text-sm text-slate-600 leading-relaxed">{exp.desc}</p>
               </div>
-              <p className="text-slate-600 text-[14px] leading-relaxed mb-4">
-                A high-performance personal portfolio built with a focus on speed, SEO, and minimalist aesthetics.
-              </p>
-              <a href="#" className="text-[12px] font-bold text-blue-600 flex items-center gap-1 group-hover:gap-2 transition-all">
-                View Project <span>→</span>
+            ))}
+          </div>
+        </section>
+
+        {/* Publications */}
+        <section className="mb-16">
+          <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400 mb-6">Publications</h2>
+          <div className="grid gap-4">
+            {publications.map((pub, i) => (
+              <a key={i} href={pub.link} target="_blank" className="p-4 bg-white border border-slate-100 rounded-xl hover:shadow-md transition-shadow block">
+                <h3 className="text-sm font-bold text-slate-900 mb-1">{pub.title}</h3>
+                <p className="text-[11px] text-slate-400 uppercase font-mono">{pub.journal}</p>
               </a>
-            </div>
+            ))}
           </div>
         </section>
 
-        <footer className="mt-40 pt-10 border-t border-slate-100 text-[10px] text-slate-400 uppercase tracking-[0.4em] font-mono text-center">
-          Handcrafted by Zhangir / 2026
+        <footer className="mt-32 pt-10 border-t border-slate-100 text-[10px] text-slate-400 tracking-[0.4em] font-mono text-center uppercase">
+          Bologna / Almaty / 2026
         </footer>
-
       </main>
     </div>
   );
