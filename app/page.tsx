@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#fafafa] text-slate-900 font-sans selection:bg-blue-100">
       {/* Главный контейнер с плавной анимацией появления */}
-      <main className="max-w-2xl mx-auto px-6 py-20 animate-in fade-in slide-in-from-bottom-4 duration-1000">
+      <main className="max-w-2xl mx-auto px-6 py-20 animate-fade-in">
         
         {/* Header */}
         <header className="mb-20">
