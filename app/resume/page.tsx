@@ -27,15 +27,18 @@ export default function Resume() {
             </div>
 
             <div className="relative border-l border-slate-200 pl-8 ml-1">
-              <div className="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-slate-300"></div>
-              <h3 className="text-xl font-bold uppercase italic leading-tight text-slate-700">Nazarbayev Intellectual School (NIS)</h3>
-              <p className="text-sm font-bold text-slate-500 mb-2 tracking-tighter uppercase font-mono">Physics and Mathematics • 2019 — 2025</p>
-              <div className="flex flex-wrap gap-2 mt-4">
-                <span className="text-[9px] font-bold px-2 py-1 bg-blue-50 text-blue-700 rounded uppercase">GPA 5.0/5.0</span>
-                <span className="text-[9px] font-bold px-2 py-1 bg-yellow-50 text-yellow-700 rounded uppercase text-balance">"Altyn Belgi" Award</span>
-                <span className="text-[9px] font-bold px-2 py-1 bg-slate-100 text-slate-600 rounded uppercase">IELTS 8.0</span>
-              </div>
-            </div>
+  <div className="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-slate-300"></div>
+  <h3 className="text-xl font-bold uppercase italic leading-tight text-slate-700">Nazarbayev Intellectual School (NIS)</h3>
+  {/* Добавлена строка с локацией ниже */}
+  <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mt-1">Almaty, Kazakhstan</p>
+  <p className="text-sm font-bold text-slate-500 mb-2 tracking-tighter uppercase font-mono mt-2">Physics and Mathematics • 2019 — 2025</p>
+  
+  <div className="flex flex-wrap gap-2 mt-4">
+    <span className="text-[9px] font-bold px-2 py-1 bg-blue-50 text-blue-700 rounded uppercase">GPA 5.0/5.0</span>
+    <span className="text-[9px] font-bold px-2 py-1 bg-yellow-50 text-yellow-700 rounded uppercase text-balance">"Altyn Belgi" Award</span>
+    <span className="text-[9px] font-bold px-2 py-1 bg-slate-100 text-slate-600 rounded uppercase">IELTS 8.0</span>
+  </div>
+</div>
           </div>
         </section>
 
@@ -148,7 +151,7 @@ export default function Resume() {
         </section>
 
         <footer className="mt-32 text-center text-[10px] font-mono text-slate-300 uppercase tracking-[0.5em]">
-          Curriculum Vitae • Zhangir Yerkassym
+          • Zhangir Yerkassym •
         </footer>
       </main>
     </div>
