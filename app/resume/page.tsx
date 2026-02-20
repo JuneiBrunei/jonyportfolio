@@ -39,7 +39,6 @@ export default function Resume() {
       <div className="flex flex-wrap gap-2">
         <span className="text-[9px] font-bold px-2 py-1 bg-blue-50 text-blue-700 rounded uppercase">GPA 5.0/5.0</span>
         <span className="text-[9px] font-bold px-2 py-1 bg-yellow-50 text-yellow-700 rounded uppercase">"Altyn Belgi" Award</span>
-        <span className="text-[9px] font-bold px-2 py-1 bg-slate-100 text-slate-600 rounded uppercase">SAT 1400</span>
         <span className="text-[9px] font-bold px-2 py-1 bg-slate-100 text-slate-600 rounded uppercase">IELTS 8.0</span>
       </div>
     </div>
@@ -56,7 +55,7 @@ export default function Resume() {
               <h3 className="text-xl font-bold uppercase italic leading-tight">Parliament Speaker</h3>
               <span className="text-[10px] font-mono text-slate-400">2023 — 2025</span>
             </div>
-            <p className="text-xs font-bold text-slate-500 mb-6 uppercase tracking-widest font-mono">Student Council • NIS Almaty</p>
+            <p className="text-xs font-bold text-slate-500 mb-6 uppercase tracking-widest font-mono">Student Council • NIS Almaty-Medeu</p>
             
             <ul className="space-y-4 text-sm text-slate-600 leading-relaxed">
               <li className="flex gap-3">
