@@ -38,7 +38,6 @@ export default function Resume() {
               <div className="flex flex-wrap gap-2">
                 <span className="text-[10px] font-bold px-3 py-1 bg-blue-50 text-blue-700 rounded-full uppercase tracking-tighter">GPA 5.0/5.0</span>
                 <span className="text-[10px] font-bold px-3 py-1 bg-yellow-50 text-yellow-700 rounded-full uppercase tracking-tighter">"Altyn Belgi"</span>
-                <span className="text-[10px] font-bold px-3 py-1 bg-slate-100 text-slate-600 rounded-full uppercase tracking-tighter">SAT 1400</span>
                 <span className="text-[10px] font-bold px-3 py-1 bg-slate-100 text-slate-600 rounded-full uppercase tracking-tighter">IELTS 8.0</span>
               </div>
             </div>
@@ -54,56 +53,63 @@ export default function Resume() {
               <h3 className="text-2xl font-bold uppercase italic leading-tight">Parliament Speaker</h3>
               <span className="text-xs font-mono font-bold text-slate-400 bg-slate-50 px-2 py-1 rounded">2023 — 2025</span>
             </div>
-            <p className="text-sm font-bold text-slate-500 mb-6 uppercase tracking-widest font-mono">Student Council • NIS Almaty</p>
+            <p className="text-sm font-bold text-slate-500 mb-6 uppercase tracking-widest font-mono">Student Council • NIS Almaty-Medeu</p>
             
-            <ul className="space-y-3 text-base text-slate-600 leading-snug">
-              <li className="flex gap-3">
-                <span className="text-blue-500 font-bold">/</span>
-                <span>Developed student governance methodology and initiated <span className="text-slate-900 font-semibold underline decoration-blue-100">100+ event concepts</span>.</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-blue-500 font-bold">/</span>
-                <span>Drafted <span className="text-slate-900 font-semibold underline decoration-blue-100">16 legislative acts</span> for council operations.</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-blue-500 font-bold">/</span>
-                <span>Managed school-wide feedback loops and sociological surveys.</span>
-              </li>
-              <li className="flex gap-3 items-center flex-wrap">
-                <span className="text-blue-500 font-bold">/</span>
-                <span>Established an independent Press Office and Instagram presence:</span>
-                <a 
-                  href="https://www.instagram.com/nisfm_studentcouncil/" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="inline-flex items-center gap-1 text-blue-600 font-bold border-b-2 border-blue-100 hover:border-blue-600 transition-all ml-1"
-                >
-                  @nisfm_studentcouncil ↗
-                </a>
-              </li>
-            </ul>
+            <ul className="space-y-4 text-sm text-slate-600 leading-relaxed">
+<li className="flex gap-3">
+<span className="text-blue-500 font-bold">/</span>
+<span>Developed a comprehensive student governance methodology and initiated <span className="text-slate-900 font-semibold">100+ event concepts</span>.</span>
+</li>
+<li className="flex gap-3">
+<span className="text-blue-500 font-bold">/</span>
+<span>Drafted <span className="text-slate-900 font-semibold">16 legislative acts</span> to institutionalize student council operations.</span>
+</li>
+<li className="flex gap-3">
+<span className="text-blue-500 font-bold">/</span>
+<span>Managed school-wide feedback loops via a digital suggestion box and sociological surveys.</span>
+</li>
+<li className="flex gap-3">
+<span className="text-blue-500 font-bold">/</span>
+<span>Supervised class communities (Shanyraks), coordinated point-based competition systems and administrative events.</span>
+</li>
+<li className="flex gap-3 items-center">
+<span className="text-blue-500 font-bold">/</span>
+<span>
+Established an independent <span className="text-slate-900 font-semibold">Press Office</span> and managed institutional social media presence.
+<a
+href="https://www.instagram.com/nisfm_studentcouncil/"
+target="_blank"
+rel="noopener noreferrer"
+className="ml-1.5 inline-flex items-center gap-1 text-blue-600 font-bold border-b border-blue-200 hover:border-blue-600 transition-all"
+>
+Instagram
+<span className="text-[10px]">↗</span>
+</a>
+</span>
+</li>
+</ul>
           </div>
         </section>
 
         {/* Awards */}
-        <section className="mb-12">
-          <h2 className="text-xs font-bold text-slate-400 uppercase tracking-[0.3em] mb-6">Awards</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {[
-              { title: "Astronomy Competition", rank: "1st Place", date: "2022", desc: "National scientific competition (90 participants)." },
-              { title: "Al-Farabi Conference", rank: "3rd Place", date: "2022", desc: "Star clusters research & numerical simulations." },
-              { title: "Climate Science Olympiad", rank: "Semifinalist", date: "23 & 24", desc: "Top 55,000 global participants." }
-            ].map((award, i) => (
-              <div key={i} className="p-5 bg-white border border-slate-100 rounded-2xl shadow-sm">
-                <div className="flex justify-between items-center mb-2">
-                  <h3 className="font-bold uppercase text-sm italic leading-tight">{award.title}</h3>
-                  <span className="text-[10px] font-mono font-bold px-2 py-0.5 bg-slate-900 text-white rounded">{award.rank}</span>
-                </div>
-                <p className="text-xs text-slate-500 leading-tight">{award.desc}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+<section className="mb-20">
+<h2 className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.3em] mb-10">Awards</h2>
+<div className="grid gap-4">
+{[
+{ title: "National Astronomy Competition", rank: "1st Place", date: "2022", desc: "Won among 90 participants and 40 research projects." },
+{ title: "IX Al-Farabi Research Conference", rank: "3rd Place", date: "2022", desc: "Published investigation on scattered star clusters and numerical simulations." },
+{ title: "Climate Science Olympiad", rank: "Semifinalist", date: "23 & 24", desc: "Top 55,000 participants globally. Missed finals by only 1 point." }
+].map((award, i) => (
+<div key={i} className="p-6 bg-white border border-slate-100 rounded-2xl">
+<div className="flex justify-between items-center mb-2">
+<h3 className="font-bold uppercase text-sm italic">{award.title}</h3>
+<span className="text-[10px] font-mono font-bold px-2 py-0.5 bg-slate-900 text-white rounded">{award.rank}</span>
+</div>
+<p className="text-xs text-slate-500 leading-relaxed">{award.desc}</p>
+</div>
+))}
+</div>
+</section>
 
         {/* Skills & Qualifications */}
         <section className="grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-slate-100 pt-10">
