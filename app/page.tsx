@@ -1,104 +1,78 @@
 export default function Home() {
-  const experiences = [
-    {
-      title: "Student Ambassador",
-      org: "Alma Mater Studiorum – Università di Bologna",
-      date: "Feb 2026 — Present",
-      desc: "Representing the oldest university in the Western world in Bologna, Italy."
-    },
-    {
-      title: "Founder & CEO",
-      org: "NIS Media League / Football Association",
-      date: "Mar 2023 — May 2025",
-      desc: "Founded a league with 130+ participants, established 6 regional branches, and developed the digital ecosystem (web & social media)."
-    },
-    {
-      title: "Student Council Parliament Speaker",
-      org: "Nazarbayev Intellectual Schools",
-      date: "Jan 2023 — Feb 2025",
-      desc: "Led the student government at the top-tier school network in Kazakhstan."
-    },
-    {
-      title: "Assistant Economic Analyst (Internship)",
-      org: "Government of Kazakhstan (Akimat)",
-      date: "Jan 2024 — Sep 2024",
-      desc: "Agriculture management and economic analysis in Rayimbek and Talgar districts."
-    }
-  ];
-
-  const publications = [
-    {
-      title: "Price Rise: A Threat or a Chance?",
-      journal: "Ogni Alatau newspaper",
-      link: "https://ognialatau.kz/news/cat-1/30382/"
-    },
-    {
-      title: "Food Products in Kazakhstan: Causes and Solutions",
-      journal: "Central Asian Scientific Journal",
-      link: "https://cajournal.kz/vol/2024/vol4(23).pdf"
-    }
-  ];
-
   return (
-    <div className="min-h-screen bg-[#fafafa] text-slate-900 font-sans selection:bg-blue-100">
-      <main className="max-w-2xl mx-auto px-6 py-20 animate-fade-in">
+    <div className="min-h-screen bg-[#fcfcfc] text-slate-900 font-sans selection:bg-blue-100 selection:text-blue-900">
+      <main className="max-w-3xl mx-auto px-6 py-16 animate-fade-in">
         
-        {/* Header */}
-        <header className="mb-20">
-          <h1 className="text-4xl font-extrabold tracking-tight mb-3">Zhangir Yerkassym</h1>
-          <p className="text-lg text-slate-600 mb-6 italic">Economics & Finance at Università di Bologna</p>
-          <div className="flex gap-5 text-sm font-semibold">
-            <a href="https://www.linkedin.com/in/zhangir-yerkassym-b48aab375/" target="_blank" className="text-blue-600 border-b border-blue-100 hover:border-blue-600">LinkedIn</a>
-            <a href="mailto:your-email@studio.unibo.it" className="text-blue-600 border-b border-blue-100 hover:border-blue-600">Email</a>
+        {/* Top Section: Status & Location */}
+        <div className="flex justify-between items-center mb-12">
+          <div className="flex items-center gap-2 bg-white border border-slate-100 px-3 py-1 rounded-full shadow-sm">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+            </span>
+            <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500">Bologna, Italy</span>
           </div>
+          <div className="text-[10px] font-mono text-slate-400 uppercase">Feb 2026</div>
+        </div>
+
+        {/* Hero Section */}
+        <header className="mb-16">
+          <h1 className="text-5xl font-black tracking-tight mb-4 italic">ZHANGIR Y.</h1>
+          <p className="text-xl text-slate-500 max-w-lg leading-relaxed">
+            Building the future of <span className="text-slate-900 underline decoration-blue-500/30 decoration-4 underline-offset-4">Media Sports</span> and studying Economics at the world's oldest university.
+          </p>
         </header>
 
-        {/* Education */}
-        <section className="mb-16">
-          <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400 mb-6">Education</h2>
-          <div className="space-y-6">
+        {/* Bento Grid Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+          
+          {/* Main Card - Education */}
+          <div className="md:col-span-2 p-8 rounded-[2rem] bg-slate-900 text-white flex flex-col justify-between min-h-[240px]">
+            <h2 className="text-[10px] font-bold uppercase tracking-[0.2em] opacity-50">Current Focus</h2>
             <div>
-              <h3 className="font-bold text-slate-900">Alma Mater Studiorum – Università di Bologna</h3>
-              <p className="text-sm text-slate-600 font-medium">Laurea, Economics and Finance (2025 — 2028)</p>
-            </div>
-            <div>
-              <h3 className="font-bold text-slate-900">Nazarbayev Intellectual Schools (NIS)</h3>
-              <p className="text-sm text-slate-600">Grade 12, GPA 5.0/5.0 (2019 — 2025)</p>
+              <p className="text-2xl font-medium mb-2 leading-tight text-blue-100">Economics & Finance at UniBo</p>
+              <p className="text-slate-400 text-sm">Specializing in market analysis and global trends.</p>
             </div>
           </div>
-        </section>
 
-        {/* Experience */}
-        <section className="mb-16">
-          <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400 mb-8">Professional Experience</h2>
-          <div className="space-y-10 border-l border-slate-100 ml-1 pl-6">
-            {experiences.map((exp, i) => (
-              <div key={i} className="relative">
-                <div className="absolute -left-[29px] top-1.5 w-1.5 h-1.5 rounded-full bg-slate-300"></div>
-                <h3 className="font-bold text-slate-900 leading-tight">{exp.title}</h3>
-                <p className="text-xs text-blue-600 font-semibold mb-2">{exp.org} • {exp.date}</p>
-                <p className="text-sm text-slate-600 leading-relaxed">{exp.desc}</p>
-              </div>
-            ))}
+          {/* Side Card - Achievement */}
+          <div className="p-8 rounded-[2rem] bg-blue-50 border border-blue-100 flex flex-col justify-between text-blue-900">
+            <h2 className="text-[10px] font-bold uppercase tracking-[0.2em] text-blue-400">GPA</h2>
+            <p className="text-5xl font-black italic">5.0</p>
+            <p className="text-xs font-semibold uppercase opacity-60">NIS Excellence</p>
           </div>
-        </section>
 
-        {/* Publications */}
-        <section className="mb-16">
-          <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400 mb-6">Publications</h2>
-          <div className="grid gap-4">
-            {publications.map((pub, i) => (
-              <a key={i} href={pub.link} target="_blank" className="p-4 bg-white border border-slate-100 rounded-xl hover:shadow-md transition-shadow block">
-                <h3 className="text-sm font-bold text-slate-900 mb-1">{pub.title}</h3>
-                <p className="text-[11px] text-slate-400 uppercase font-mono">{pub.journal}</p>
-              </a>
-            ))}
+          {/* NIS Media League Card */}
+          <div className="md:col-span-1 p-8 rounded-[2rem] bg-white border border-slate-100 flex flex-col justify-between min-h-[200px] hover:shadow-xl transition-shadow cursor-default">
+            <div className="text-3xl">⚽️</div>
+            <div>
+              <h3 className="font-bold text-lg">NIS Media League</h3>
+              <p className="text-xs text-slate-500">Founded & Managed 130+ players</p>
+            </div>
           </div>
-        </section>
 
-        <footer className="mt-32 pt-10 border-t border-slate-100 text-[10px] text-slate-400 tracking-[0.4em] font-mono text-center uppercase">
-          Bologna / Almaty / 2026
+          {/* Gov Internship Card */}
+          <div className="md:col-span-2 p-8 rounded-[2rem] bg-white border border-slate-100 flex flex-col justify-between hover:shadow-xl transition-shadow cursor-default group">
+             <div className="flex justify-between items-start">
+               <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Internship</span>
+               <span className="text-xs text-slate-400 group-hover:text-blue-500 transition-colors">Government of KZ</span>
+             </div>
+             <p className="text-xl font-bold mt-4 leading-tight">Assistant Economic Analyst at Akimat</p>
+          </div>
+        </div>
+
+        {/* Links / Contact */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <a href="https://linkedin.com/in/zhangir-yerkassym-b48aab375/" className="p-4 rounded-2xl bg-white border border-slate-100 text-center font-bold text-sm hover:bg-slate-50 transition-colors">LinkedIn</a>
+          <a href="https://ognialatau.kz/news/cat-1/30382/" className="p-4 rounded-2xl bg-white border border-slate-100 text-center font-bold text-sm hover:bg-slate-50 transition-colors">Pubs</a>
+          <a href="mailto:your-email@studio.unibo.it" className="p-4 rounded-2xl bg-slate-900 text-white text-center font-bold text-sm hover:opacity-90 transition-opacity">Contact</a>
+          <div className="p-4 rounded-2xl bg-slate-100 text-slate-400 text-center font-bold text-sm cursor-not-allowed">CV (Soon)</div>
+        </div>
+
+        <footer className="mt-24 text-center text-[10px] font-mono text-slate-400 uppercase tracking-[0.5em]">
+          Inspired by Bologna • Built for the Future
         </footer>
+
       </main>
     </div>
   );
