@@ -92,7 +92,7 @@ Instagram
         </section>
 
         {/* Awards */}
-<section className="mb-8">
+<section className="mb-6">
   {/* Увеличил с text-[10px] до text-xs */}
   <h2 className="text-xs font-bold text-slate-400 uppercase tracking-[0.3em] mb-6">Awards</h2>
   <div className="grid gap-4">

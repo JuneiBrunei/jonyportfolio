@@ -27,16 +27,16 @@ export default function Home() {
 
         {/* Navigation Buttons */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
-          <Link href="/publications" className="p-4 rounded-2xl bg-slate-900 text-white text-center font-bold text-sm hover:bg-blue-600 transition-all uppercase tracking-tighter">
-            Publications
-          </Link>
-          <Link href="/resume" className="p-4 rounded-2xl bg-white border border-slate-200 text-center font-bold text-sm hover:border-slate-400 transition-all uppercase tracking-tighter text-slate-900">
-            Resume
-          </Link>
-          <Link href="/projects" className="p-4 rounded-2xl bg-white border border-slate-200 text-center font-bold text-sm hover:border-slate-400 transition-all uppercase tracking-tighter text-slate-900">
-            Projects
-          </Link>
-        </div>
+  <Link href="/publications" className="p-4 rounded-2xl bg-slate-900 text-white text-center font-bold text-sm hover:bg-blue-600 transition-all uppercase tracking-tighter">
+    Publications
+  </Link>
+  <Link href="/resume" className="p-4 rounded-2xl bg-slate-900 text-white text-center font-bold text-sm hover:bg-blue-600 transition-all uppercase tracking-tighter">
+    Resume
+  </Link>
+  <Link href="/projects" className="p-4 rounded-2xl bg-slate-900 text-white text-center font-bold text-sm hover:bg-blue-600 transition-all uppercase tracking-tighter">
+    Projects
+  </Link>
+</div>
 
         {/* Bento Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
