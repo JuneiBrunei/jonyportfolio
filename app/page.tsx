@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image'; // Импортируем компонент для фото
 
 export default function Home() {
   return (
@@ -17,32 +16,16 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Hero Section with Photo */}
-        <header className="mb-16 flex flex-col md:flex-row gap-8 items-center md:items-start">
-          <div className="flex-1 text-center md:text-left">
-            <h1 className="text-5xl font-black tracking-tight mb-4 uppercase italic">Zhangir Yerkassym</h1>
-            <p className="text-xl text-slate-500 max-w-2xl leading-relaxed">
-              1st year <span className="text-slate-900 font-semibold underline decoration-blue-500/20 underline-offset-4">Economics and Finance</span> student at Università di Bologna. 
-              Academic researcher and founder with a background in government analysis.
-            </p>
-          </div>
-          
-          {/* Блок фотографии */}
-          <div className="relative w-32 h-32 md:w-40 md:h-40 shrink-0">
-            <div className="absolute inset-0 bg-blue-500 rounded-3xl rotate-6 -z-10 opacity-20"></div>
-            <div className="w-full h-full rounded-3xl bg-slate-200 overflow-hidden border-2 border-white shadow-xl grayscale hover:grayscale-0 transition-all duration-500">
-              {/* Положи фото в папку public и назови me.jpg */}
-              <img 
-                src="/me.jpeg" 
-                alt="Zhangir Yerkassym" 
-                className="w-full h-full object-cover"
-                onError={(e) => { e.currentTarget.src = "https://api.dicebear.com/7.x/avataaars/svg?seed=Zhangir"; }} 
-              />
-            </div>
-          </div>
+        {/* Hero Section */}
+        <header className="mb-16">
+          <h1 className="text-5xl font-black tracking-tight mb-4 uppercase italic">Zhangir Yerkassym</h1>
+          <p className="text-xl text-slate-500 max-w-2xl leading-relaxed">
+            1st year <span className="text-slate-900 font-semibold underline decoration-blue-500/20 underline-offset-4">Economics and Finance</span> student at Università di Bologna. 
+            Academic researcher and founder with a background in government analysis.
+          </p>
         </header>
 
-        {/* Navigation Buttons - Теперь 4 кнопки */}
+        {/* Navigation Buttons */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-16">
           <Link href="/publications" className="p-3 rounded-xl bg-slate-900 text-white text-center font-bold text-[11px] hover:bg-blue-600 transition-all uppercase tracking-tighter">
             Publications
@@ -60,7 +43,7 @@ export default function Home() {
 
         {/* Bento Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
-          {/* (Твои существующие карточки Bento без изменений) */}
+          
           <div className="md:col-span-2 p-8 rounded-[2rem] bg-white border border-slate-100 flex flex-col justify-between min-h-[220px] shadow-sm">
             <h2 className="text-[10px] font-bold uppercase tracking-[0.2em] text-blue-500">Current Focus</h2>
             <div>
@@ -99,7 +82,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Footer with updated Socials */}
+        {/* Footer */}
         <footer className="mt-32 pt-10 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-400 font-bold">
           <div className="text-[10px] font-mono uppercase tracking-[0.2em]">
             © {new Date().getFullYear()} Zhangir Yerkassym
