@@ -75,8 +75,8 @@ export default function AboutMe() {
               <p className="text-sm text-zinc-500 mb-4">The ultimate stress relief with friends.</p>
             </div>
             <div className="flex gap-2">
+              <span className="px-3 py-1 bg-zinc-800 text-white text-[10px] font-bold rounded-lg tracking-widest">UMP45</span>
               <span className="px-3 py-1 bg-zinc-800 text-white text-[10px] font-bold rounded-lg tracking-widest">SKS</span>
-              <span className="px-3 py-1 bg-zinc-800 text-white text-[10px] font-bold rounded-lg tracking-widest">UMP</span>
             </div>
           </div>
 
