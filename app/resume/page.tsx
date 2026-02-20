@@ -53,24 +53,35 @@ export default function Resume() {
             <ul className="space-y-4 text-sm text-slate-600 leading-relaxed">
               <li className="flex gap-3">
                 <span className="text-blue-500 font-bold">/</span>
-                <span>Developed a comprehensive student governance methodology and initiated <span className="text-slate-900 font-semibold">100+ event concepts</span>. [cite: 27, 30]</span>
+                <span>Developed a comprehensive student governance methodology and initiated <span className="text-slate-900 font-semibold">100+ event concepts</span>.</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-blue-500 font-bold">/</span>
-                <span>Drafted <span className="text-slate-900 font-semibold">16 legislative acts</span> to institutionalize student council operations. [cite: 34]</span>
+                <span>Drafted <span className="text-slate-900 font-semibold">16 legislative acts</span> to institutionalize student council operations.</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-blue-500 font-bold">/</span>
-                <span>Managed school-wide feedback loops via a digital suggestion box and sociological surveys. [cite: 30]</span>
+                <span>Managed school-wide feedback loops via a digital suggestion box and sociological surveys.</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-blue-500 font-bold">/</span>
-                <span>Supervised class communities (Shanyraks), coordinated point-based competition systems and administrative events. [cite: 27]</span>
+                <span>Supervised class communities (Shanyraks), coordinated point-based competition systems and administrative events.</span>
               </li>
-              <li className="flex gap-3">
-                <span className="text-blue-500 font-bold">/</span>
-                <span>Established an independent <span className="text-slate-900 font-semibold">Press Office</span> and managed institutional social media presence. [cite: 30, 34]</span>
-              </li>
+              <li className="flex gap-3 items-center">
+  <span className="text-blue-500 font-bold">/</span>
+  <span>
+    Established an independent <span className="text-slate-900 font-semibold">Press Office</span> and managed institutional social media presence.
+    <a 
+      href="https://www.instagram.com/nisfm_studentcouncil/" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="ml-1.5 inline-flex items-center gap-1 text-blue-600 font-bold border-b border-blue-200 hover:border-blue-600 transition-all"
+    >
+      Instagram
+      <span className="text-[10px]">↗</span>
+    </a>
+  </span>
+</li>
             </ul>
           </div>
         </section>
@@ -81,7 +92,7 @@ export default function Resume() {
           <div className="grid gap-4">
             {[
               { title: "National Astronomy Competition", rank: "1st Place", date: "2022", desc: "Won among 90 participants and 40 research projects." },
-              { title: "Al-Farabi Research Conference", rank: "3rd Place", date: "2022", desc: "Published investigation on scattered star clusters and numerical simulations." },
+              { title: "IX Al-Farabi Research Conference", rank: "3rd Place", date: "2022", desc: "Published investigation on scattered star clusters and numerical simulations." },
               { title: "Climate Science Olympiad", rank: "Semifinalist", date: "23 & 24", desc: "Top 55,000 participants globally. Missed finals by only 1 point." }
             ].map((award, i) => (
               <div key={i} className="p-6 bg-white border border-slate-100 rounded-2xl">
@@ -108,7 +119,7 @@ export default function Resume() {
                 <p className="text-[10px] font-bold text-slate-400 uppercase mb-1">Courses</p>
                 <p className="text-xs text-slate-600">Rice University: Principles of Economics</p>
                 <p className="text-xs text-slate-600">UPenn: Fintech Foundations & Applications</p>
-                <p className="text-xs text-slate-600">NatGeo: Young Explorers</p>
+                <p className="text-xs text-slate-600">National Geographic: Young Explorers</p>
               </div>
             </div>
           </div>
