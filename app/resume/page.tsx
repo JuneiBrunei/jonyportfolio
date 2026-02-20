@@ -16,31 +16,36 @@ export default function Resume() {
         </header>
 
         {/* Education Section */}
-        <section className="mb-20">
-          <h2 className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.3em] mb-10">Education</h2>
-          <div className="space-y-12">
-            <div className="relative border-l border-slate-200 pl-8 ml-1">
-              <div className="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-blue-500"></div>
-              <h3 className="text-xl font-bold uppercase italic leading-tight">Università di Bologna</h3>
-              <p className="text-sm font-bold text-blue-600 mb-2 tracking-tighter uppercase">Bachelor in Economics and Finance • 2025 — 2028</p>
-              <p className="text-slate-500 text-sm italic">Bologna, Italy</p>
-            </div>
+<section className="mb-20">
+  <h2 className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.3em] mb-10">Education</h2>
+  <div className="space-y-12">
+    
+    {/* Università di Bologna */}
+    <div className="relative border-l border-slate-200 pl-8 ml-1">
+      <div className="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-blue-500"></div>
+      <h3 className="text-xl font-bold uppercase italic leading-tight">Università di Bologna</h3>
+      <p className="text-sm font-bold text-blue-600 mb-1 tracking-tighter uppercase">Bachelor in Economics and Finance • 2025 — 2028</p>
+      <p className="text-slate-500 text-xs italic">Bologna, Italy</p>
+    </div>
 
-            <div className="relative border-l border-slate-200 pl-8 ml-1">
-  <div className="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-slate-300"></div>
-  <h3 className="text-xl font-bold uppercase italic leading-tight text-slate-700">Nazarbayev Intellectual School (NIS)</h3>
-  {/* Добавлена строка с локацией ниже */}
-  <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mt-1">Almaty, Kazakhstan</p>
-  <p className="text-sm font-bold text-slate-500 mb-2 tracking-tighter uppercase font-mono mt-2">Physics and Mathematics • 2019 — 2025</p>
-  
-  <div className="flex flex-wrap gap-2 mt-4">
-    <span className="text-[9px] font-bold px-2 py-1 bg-blue-50 text-blue-700 rounded uppercase">GPA 5.0/5.0</span>
-    <span className="text-[9px] font-bold px-2 py-1 bg-yellow-50 text-yellow-700 rounded uppercase text-balance">"Altyn Belgi" Award</span>
-    <span className="text-[9px] font-bold px-2 py-1 bg-slate-100 text-slate-600 rounded uppercase">IELTS 8.0</span>
+    {/* NIS */}
+    <div className="relative border-l border-slate-200 pl-8 ml-1">
+      <div className="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-slate-300"></div>
+      <h3 className="text-xl font-bold uppercase italic leading-tight text-slate-700">Nazarbayev Intellectual School</h3>
+      <p className="text-sm font-bold text-slate-500 mb-1 tracking-tighter uppercase font-mono">Physics and Mathematics • 2019 — 2025</p>
+      <p className="text-slate-500 text-xs italic mb-4">Almaty, Kazakhstan</p>
+      
+      {/* Твои плашки с результатами теперь аккуратно снизу */}
+      <div className="flex flex-wrap gap-2">
+        <span className="text-[9px] font-bold px-2 py-1 bg-blue-50 text-blue-700 rounded uppercase">GPA 5.0/5.0</span>
+        <span className="text-[9px] font-bold px-2 py-1 bg-yellow-50 text-yellow-700 rounded uppercase">"Altyn Belgi" Award</span>
+        <span className="text-[9px] font-bold px-2 py-1 bg-slate-100 text-slate-600 rounded uppercase">SAT 1400</span>
+        <span className="text-[9px] font-bold px-2 py-1 bg-slate-100 text-slate-600 rounded uppercase">IELTS 8.0</span>
+      </div>
+    </div>
+
   </div>
-</div>
-          </div>
-        </section>
+</section>
 
         {/* Leadership & Experience */}
         <section className="mb-20">
