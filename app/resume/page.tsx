@@ -77,7 +77,7 @@ export default function Resume() {
 <span>
 Established an independent <span className="text-slate-900 font-semibold">Press Office</span> and managed institutional social media presence.
 <a
-href="https://www.instagram.com/nisfm_studentcouncil/"
+href="https://www.instagram.com/speaker_phm_ala?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
 target="_blank"
 rel="noopener noreferrer"
 className="ml-1.5 inline-flex items-center gap-1 text-blue-600 font-bold border-b border-blue-200 hover:border-blue-600 transition-all"
@@ -93,22 +93,25 @@ Instagram
 
         {/* Awards */}
 <section className="mb-20">
-<h2 className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.3em] mb-10">Awards</h2>
-<div className="grid gap-4">
-{[
-{ title: "National Astronomy Competition", rank: "1st Place", date: "2022", desc: "Won among 90 participants and 40 research projects." },
-{ title: "IX Al-Farabi Research Conference", rank: "3rd Place", date: "2022", desc: "Published investigation on scattered star clusters and numerical simulations." },
-{ title: "Climate Science Olympiad", rank: "Semifinalist", date: "23 & 24", desc: "Top 55,000 participants globally. Missed finals by only 1 point." }
-].map((award, i) => (
-<div key={i} className="p-6 bg-white border border-slate-100 rounded-2xl">
-<div className="flex justify-between items-center mb-2">
-<h3 className="font-bold uppercase text-sm italic">{award.title}</h3>
-<span className="text-[10px] font-mono font-bold px-2 py-0.5 bg-slate-900 text-white rounded">{award.rank}</span>
-</div>
-<p className="text-xs text-slate-500 leading-relaxed">{award.desc}</p>
-</div>
-))}
-</div>
+  {/* Увеличил с text-[10px] до text-xs */}
+  <h2 className="text-xs font-bold text-slate-400 uppercase tracking-[0.3em] mb-6">Awards</h2>
+  <div className="grid gap-4">
+    {[
+      { title: "National Astronomy Competition", rank: "1st Place", date: "2022", desc: "Won among 90 participants and 40 research projects." },
+      { title: "IX Al-Farabi Research Conference", rank: "3rd Place", date: "2022", desc: "Published investigation on scattered star clusters and numerical simulations." },
+      { title: "Climate Science Olympiad", rank: "Semifinalist", date: "23 & 24", desc: "Top 55,000 participants globally. Missed finals by only 1 point." }
+    ].map((award, i) => (
+      <div key={i} className="p-6 bg-white border border-slate-100 rounded-2xl">
+        <div className="flex justify-between items-center mb-2">
+          {/* Увеличил с text-sm до text-base */}
+          <h3 className="font-bold uppercase text-base italic">{award.title}</h3>
+          <span className="text-[10px] font-mono font-bold px-2 py-0.5 bg-slate-900 text-white rounded">{award.rank}</span>
+        </div>
+        {/* Увеличил с text-xs до text-sm */}
+        <p className="text-sm text-slate-500 leading-relaxed">{award.desc}</p>
+      </div>
+    ))}
+  </div>
 </section>
 
         {/* Skills & Qualifications */}
@@ -118,13 +121,13 @@ Instagram
             <div className="space-y-4">
               <div>
                 <p className="text-[10px] font-bold text-slate-400 uppercase mb-1 tracking-widest">Degrees</p>
-                <p className="text-base font-bold text-slate-800">Trainer Degree (Tenge-ten)</p>
+                <p className="text-base font-bold text-slate-800">Trainer Degree (Tenge-ten Kazakh Association)</p>
               </div>
               <div className="space-y-1">
                 <p className="text-[10px] font-bold text-slate-400 uppercase mb-1 tracking-widest">Courses</p>
-                <p className="text-sm text-slate-600 font-medium italic">Rice: Principles of Economics</p>
-                <p className="text-sm text-slate-600 font-medium italic">UPenn: Fintech Foundations</p>
-                <p className="text-sm text-slate-600 font-medium italic">NatGeo: Young Explorers</p>
+                <p className="text-sm text-slate-600 font-medium italic">Rice University: Principles of Economics</p>
+                <p className="text-sm text-slate-600 font-medium italic">UPenn: Fintech Foundations & Applications</p>
+                <p className="text-sm text-slate-600 font-medium italic">National Geographic: Young Explorers</p>
               </div>
             </div>
           </div>
