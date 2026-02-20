@@ -46,7 +46,7 @@ export default function Home() {
             <h2 className="text-[10px] font-bold uppercase tracking-[0.2em] text-blue-500">Current Focus</h2>
             <div>
               <p className="text-2xl font-bold mb-2 leading-tight uppercase italic text-balance">Economics & Finance</p>
-              <p className="text-slate-500 text-sm italic">Specializing in Econometrics and Financial Technology at the world's oldest university.</p>
+              <p className="text-slate-500 text-sm italic">Specializing in market analysis, global trends, and financial technology at the world's oldest university.</p>
             </div>
           </div>
 
@@ -54,7 +54,7 @@ export default function Home() {
           <div className="p-8 rounded-[2rem] bg-blue-50 border border-blue-100 flex flex-col justify-between text-blue-900">
             <h2 className="text-[10px] font-bold uppercase tracking-[0.2em] text-blue-400">University Role</h2>
             <p className="text-xl font-black leading-tight uppercase italic">Student Ambassador</p>
-            <p className="text-[10px] font-bold uppercase opacity-60 italic">Uni Bologna</p>
+            <p className="text-[10px] font-bold uppercase opacity-60 italic">Alma Mater Studiorum</p>
           </div>
 
           {/* Card 3 - Science (Updated) */}
