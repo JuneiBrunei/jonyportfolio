@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#fcfcfc] text-slate-900 font-sans selection:bg-blue-100 selection:text-blue-900">
@@ -12,14 +14,14 @@ export default function Home() {
             </span>
             <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500">Bologna, Italy</span>
           </div>
-          <div className="text-[10px] font-mono text-slate-400 uppercase">Feb 2026</div>
+          <div className="text-[10px] font-mono text-slate-400 uppercase font-bold">Feb 2026</div>
         </div>
 
         {/* Hero Section */}
         <header className="mb-16">
-          <h1 className="text-5xl font-black tracking-tight mb-4 italic">ZHANGIR Y.</h1>
+          <h1 className="text-5xl font-black tracking-tight mb-4 italic uppercase">Zhangir Y.</h1>
           <p className="text-xl text-slate-500 max-w-lg leading-relaxed">
-            Building the future of <span className="text-slate-900 underline decoration-blue-500/30 decoration-4 underline-offset-4">Media Sports</span> and studying Economics at the world's oldest university.
+            Building the future of <span className="text-slate-900 underline decoration-blue-500/30 decoration-4 underline-offset-4 font-semibold">Media Sports</span> and studying Economics at Università di Bologna.
           </p>
         </header>
 
@@ -30,8 +32,8 @@ export default function Home() {
           <div className="md:col-span-2 p-8 rounded-[2rem] bg-slate-900 text-white flex flex-col justify-between min-h-[240px]">
             <h2 className="text-[10px] font-bold uppercase tracking-[0.2em] opacity-50">Current Focus</h2>
             <div>
-              <p className="text-2xl font-medium mb-2 leading-tight text-blue-100">Economics & Finance at UniBo</p>
-              <p className="text-slate-400 text-sm">Specializing in market analysis and global trends.</p>
+              <p className="text-2xl font-medium mb-2 leading-tight text-blue-100 text-balance">Economics & Finance at UniBo</p>
+              <p className="text-slate-400 text-sm">Specializing in market analysis and global economic trends.</p>
             </div>
           </div>
 
@@ -43,11 +45,11 @@ export default function Home() {
           </div>
 
           {/* NIS Media League Card */}
-          <div className="md:col-span-1 p-8 rounded-[2rem] bg-white border border-slate-100 flex flex-col justify-between min-h-[200px] hover:shadow-xl transition-shadow cursor-default">
-            <div className="text-3xl">⚽️</div>
+          <div className="md:col-span-1 p-8 rounded-[2rem] bg-white border border-slate-100 flex flex-col justify-between min-h-[200px] hover:shadow-xl transition-shadow cursor-default group">
+            <div className="text-3xl group-hover:scale-110 transition-transform origin-left">⚽️</div>
             <div>
-              <h3 className="font-bold text-lg">NIS Media League</h3>
-              <p className="text-xs text-slate-500">Founded & Managed 130+ players</p>
+              <h3 className="font-bold text-lg leading-tight">NIS Media League</h3>
+              <p className="text-xs text-slate-500 mt-1">Founded & Managed 130+ players</p>
             </div>
           </div>
 
@@ -55,22 +57,22 @@ export default function Home() {
           <div className="md:col-span-2 p-8 rounded-[2rem] bg-white border border-slate-100 flex flex-col justify-between hover:shadow-xl transition-shadow cursor-default group">
              <div className="flex justify-between items-start">
                <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Internship</span>
-               <span className="text-xs text-slate-400 group-hover:text-blue-500 transition-colors">Government of KZ</span>
+               <span className="text-xs text-slate-400 group-hover:text-blue-500 transition-colors uppercase font-mono">Government of KZ</span>
              </div>
              <p className="text-xl font-bold mt-4 leading-tight">Assistant Economic Analyst at Akimat</p>
           </div>
         </div>
 
         {/* Links / Contact */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <a href="https://linkedin.com/in/zhangir-yerkassym-b48aab375/" className="p-4 rounded-2xl bg-white border border-slate-100 text-center font-bold text-sm hover:bg-slate-50 transition-colors">LinkedIn</a>
-          <a href="https://ognialatau.kz/news/cat-1/30382/" className="p-4 rounded-2xl bg-white border border-slate-100 text-center font-bold text-sm hover:bg-slate-50 transition-colors">Pubs</a>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 font-mono uppercase tracking-tighter">
+          <a href="https://linkedin.com/in/zhangir-yerkassym-b48aab375/" target="_blank" className="p-4 rounded-2xl bg-white border border-slate-100 text-center font-bold text-sm hover:bg-slate-50 transition-colors">LinkedIn</a>
+          <Link href="/publications" className="p-4 rounded-2xl bg-white border border-slate-100 text-center font-bold text-sm hover:bg-slate-50 transition-colors">Pubs</Link>
           <a href="mailto:your-email@studio.unibo.it" className="p-4 rounded-2xl bg-slate-900 text-white text-center font-bold text-sm hover:opacity-90 transition-opacity">Contact</a>
           <div className="p-4 rounded-2xl bg-slate-100 text-slate-400 text-center font-bold text-sm cursor-not-allowed">CV (Soon)</div>
         </div>
 
         <footer className="mt-24 text-center text-[10px] font-mono text-slate-400 uppercase tracking-[0.5em]">
-          Inspired by Bologna • Built for the Future
+          Inspired by Bologna • {new Date().getFullYear()}
         </footer>
 
       </main>
