@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#fcfcfc] text-slate-900 font-sans selection:bg-blue-100 selection:text-blue-900">
+    <div className="min-h-screen bg-[#fcfcfc] text-slate-900 font-sans selection:bg-blue-100">
       <main className="max-w-3xl mx-auto px-6 py-16 animate-fade-in">
         
         {/* Live Status */}
@@ -14,26 +14,30 @@ export default function Home() {
             </span>
             <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500">Currently in Bologna, Italy</span>
           </div>
+          <div className="text-[10px] font-mono text-slate-400 font-bold uppercase">UNIBO • 1st Year</div>
         </div>
 
         {/* Hero Section */}
         <header className="mb-16">
-          <h1 className="text-5xl font-black tracking-tight mb-4 uppercase">Zhangir Yerkassym</h1>
-          <p className="text-xl text-slate-500 max-w-xl leading-relaxed">
-            1st year <span className="text-slate-900 font-semibold">Economics and Finance</span> student at Università di Bologna. 
-            Blending economic research with leadership in sports and student governance.
+          <h1 className="text-5xl font-black tracking-tight mb-4 uppercase italic">Zhangir Yerkassym</h1>
+          <p className="text-xl text-slate-500 max-w-2xl leading-relaxed">
+            1st year <span className="text-slate-900 font-semibold underline decoration-blue-500/20 underline-offset-4">Economics and Finance</span> student at Università di Bologna. 
+            Academic researcher and founder with a background in government analysis.
           </p>
+          <div className="mt-4 text-xs font-mono text-slate-400 uppercase tracking-tight">
+             Almaty, Kazakhstan → Bologna, Italy
+          </div>
         </header>
 
         {/* Navigation Buttons */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
-          <Link href="/publications" className="p-4 rounded-2xl bg-slate-900 text-white text-center font-bold text-sm hover:bg-slate-800 transition-all uppercase tracking-tighter">
+          <Link href="/publications" className="p-4 rounded-2xl bg-slate-900 text-white text-center font-bold text-sm hover:bg-blue-600 transition-all uppercase tracking-tighter">
             Publications
           </Link>
-          <Link href="/resume" className="p-4 rounded-2xl bg-white border border-slate-200 text-center font-bold text-sm hover:bg-slate-50 transition-all uppercase tracking-tighter text-slate-600">
+          <Link href="/resume" className="p-4 rounded-2xl bg-white border border-slate-200 text-center font-bold text-sm hover:border-slate-400 transition-all uppercase tracking-tighter text-slate-900">
             Resume
           </Link>
-          <Link href="/projects" className="p-4 rounded-2xl bg-white border border-slate-200 text-center font-bold text-sm hover:bg-slate-50 transition-all uppercase tracking-tighter text-slate-600">
+          <Link href="/projects" className="p-4 rounded-2xl bg-white border border-slate-200 text-center font-bold text-sm hover:border-slate-400 transition-all uppercase tracking-tighter text-slate-900">
             Projects
           </Link>
         </div>
@@ -45,48 +49,48 @@ export default function Home() {
           <div className="md:col-span-2 p-8 rounded-[2rem] bg-white border border-slate-100 flex flex-col justify-between min-h-[220px] shadow-sm">
             <h2 className="text-[10px] font-bold uppercase tracking-[0.2em] text-blue-500">Current Focus</h2>
             <div>
-              <p className="text-2xl font-bold mb-2 leading-tight">Economics & Finance at UniBo</p>
-              <p className="text-slate-500 text-sm">Specializing in market analysis, global trends, and financial technology.</p>
+              <p className="text-2xl font-bold mb-2 leading-tight uppercase italic">Economics & Finance</p>
+              <p className="text-slate-500 text-sm">Focusing on Econometrics, Financial Markets, and Fintech development at UniBo.</p>
             </div>
           </div>
 
           {/* Card 2 - Student Ambassador */}
           <div className="p-8 rounded-[2rem] bg-blue-50 border border-blue-100 flex flex-col justify-between text-blue-900">
-            <h2 className="text-[10px] font-bold uppercase tracking-[0.2em] text-blue-400">University Role</h2>
-            <p className="text-xl font-black leading-tight uppercase">Student Ambassador</p>
-            <p className="text-[10px] font-bold uppercase opacity-60">Alma Mater Studiorum</p>
+            <h2 className="text-[10px] font-bold uppercase tracking-[0.2em] text-blue-400">Role</h2>
+            <p className="text-xl font-black leading-tight uppercase italic">Student Ambassador</p>
+            <p className="text-[10px] font-bold uppercase opacity-60 italic">Uni Bologna</p>
           </div>
 
-          {/* Card 3 - NIS Media League */}
-          <div className="p-8 rounded-[2rem] bg-white border border-slate-100 flex flex-col justify-between min-h-[200px] hover:shadow-md transition-all">
-            <div className="text-3xl">⚽️</div>
+          {/* Card 3 - Science & Awards */}
+          <div className="p-8 rounded-[2rem] bg-white border border-slate-100 flex flex-col justify-between min-h-[200px]">
+            <div className="text-3xl italic font-black text-slate-200">01.</div>
             <div>
-              <h3 className="font-bold text-lg leading-tight uppercase">Media League</h3>
-              <p className="text-xs text-slate-500 mt-1">Founder. 130+ players. Developed ecosystem from scratch.</p>
+              <h3 className="font-bold text-lg leading-tight uppercase">Science</h3>
+              <p className="text-xs text-slate-500 mt-1 italic">1st Place in National Astronomy Competition & Semifinalist at Climate Science Olympiad.</p>
             </div>
           </div>
 
           {/* Card 4 - Economic Analyst */}
-          <div className="md:col-span-2 p-8 rounded-[2rem] bg-slate-50 border border-slate-200 flex flex-col justify-between hover:shadow-md transition-all">
+          <div className="md:col-span-2 p-8 rounded-[2rem] bg-slate-50 border border-slate-200 flex flex-col justify-between group">
              <div className="flex justify-between items-start">
-               <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Recent Experience</span>
-               <span className="text-xs text-slate-400 font-mono uppercase">Gov of Kazakhstan</span>
+               <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400 italic font-mono">Experience</span>
+               <span className="text-xs text-slate-400 uppercase font-mono">Akimat (Gov)</span>
              </div>
              <div>
-                <p className="text-xl font-bold leading-tight">Assistant Economic Analyst</p>
-                <p className="text-sm text-slate-500 mt-1 italic">Focus on agricultural subsidies and inflation research.</p>
+                <p className="text-xl font-bold leading-tight uppercase">Economic Analyst</p>
+                <p className="text-sm text-slate-500 mt-1 italic">Worked on SMART technology goals and agricultural training plans in Almaty region.</p>
              </div>
           </div>
         </div>
 
         {/* Footer with Contacts */}
         <footer className="mt-32 pt-10 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="text-[10px] font-mono text-slate-400 uppercase tracking-[0.2em]">
+          <div className="text-[10px] font-mono text-slate-400 uppercase tracking-[0.2em] font-bold">
             © {new Date().getFullYear()} Zhangir Yerkassym
           </div>
-          <div className="flex gap-6 font-bold text-xs uppercase tracking-widest">
-            <a href="https://linkedin.com/in/zhangir-yerkassym-b48aab375/" target="_blank" className="hover:text-blue-600 transition-colors">LinkedIn</a>
-            <a href="mailto:zhangirerkasym@gmail.com" className="hover:text-blue-600 transition-colors">Contact</a>
+          <div className="flex gap-8 font-black text-[11px] uppercase tracking-widest italic">
+            <a href="https://linkedin.com/in/zhangir-yerkassym-b48aab375/" target="_blank" className="hover:text-blue-600 transition-colors border-b-2 border-transparent hover:border-blue-600">LinkedIn</a>
+            <a href="mailto:zhangirerkasym@gmail.com" className="hover:text-blue-600 transition-colors border-b-2 border-transparent hover:border-blue-600">Contact</a>
           </div>
         </footer>
 
