@@ -36,7 +36,7 @@ export default function Home() {
           <Link href="/projects" className="p-3 rounded-xl bg-slate-900 text-white text-center font-bold text-[11px] hover:bg-blue-600 transition-all uppercase tracking-tighter">
             Projects
           </Link>
-          <Link href="/about" className="p-3 rounded-xl bg-blue-600 text-white text-center font-bold text-[11px] hover:bg-slate-900 transition-all uppercase tracking-tighter shadow-lg shadow-blue-200">
+          <Link href="/about" className="p-3 rounded-xl bg-slate-900 text-white text-center font-bold text-[11px] hover:bg-blue-600 transition-all uppercase tracking-tighter">
             About Me
           </Link>
         </div>
@@ -90,7 +90,7 @@ export default function Home() {
           <div className="flex flex-wrap justify-center gap-6 text-[11px] uppercase tracking-widest italic font-black">
             <a href="https://linkedin.com/in/zhangir-yerkassym-b48aab375/" target="_blank" className="hover:text-blue-600 transition-colors border-b-2 border-transparent hover:border-blue-600">LinkedIn</a>
             <a href="https://www.instagram.com/jonyyv.erk/" target="_blank" className="hover:text-pink-500 transition-colors border-b-2 border-transparent hover:border-pink-500">Instagram</a>
-            <a href="https://t.me/jonyyv_erk" target="_blank" className="hover:text-blue-400 transition-colors border-b-2 border-transparent hover:border-blue-400">Telegram</a>
+            <a href="https://t.me/Jonyyverk" target="_blank" className="hover:text-blue-400 transition-colors border-b-2 border-transparent hover:border-blue-400">Telegram</a>
             <a href="mailto:zhangirerkasym@gmail.com" className="hover:text-slate-900 transition-colors border-b-2 border-transparent hover:border-slate-900">Email</a>
           </div>
         </footer>
