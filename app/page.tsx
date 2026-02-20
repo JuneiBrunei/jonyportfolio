@@ -14,7 +14,6 @@ export default function Home() {
             </span>
             <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500">Currently in Bologna, Italy</span>
           </div>
-          <div className="text-[10px] font-mono text-slate-400 font-bold uppercase">UNIBO • 1st Year</div>
         </div>
 
         {/* Hero Section */}
@@ -24,9 +23,6 @@ export default function Home() {
             1st year <span className="text-slate-900 font-semibold underline decoration-blue-500/20 underline-offset-4">Economics and Finance</span> student at Università di Bologna. 
             Academic researcher and founder with a background in government analysis.
           </p>
-          <div className="mt-4 text-xs font-mono text-slate-400 uppercase tracking-tight">
-             Almaty, Kazakhstan → Bologna, Italy
-          </div>
         </header>
 
         {/* Navigation Buttons */}
@@ -49,46 +45,50 @@ export default function Home() {
           <div className="md:col-span-2 p-8 rounded-[2rem] bg-white border border-slate-100 flex flex-col justify-between min-h-[220px] shadow-sm">
             <h2 className="text-[10px] font-bold uppercase tracking-[0.2em] text-blue-500">Current Focus</h2>
             <div>
-              <p className="text-2xl font-bold mb-2 leading-tight uppercase italic">Economics & Finance</p>
-              <p className="text-slate-500 text-sm">Focusing on Econometrics, Financial Markets, and Fintech development at UniBo.</p>
+              <p className="text-2xl font-bold mb-2 leading-tight uppercase italic text-balance">Economics & Finance</p>
+              <p className="text-slate-500 text-sm italic">Specializing in Econometrics and Financial Technology at the world's oldest university.</p>
             </div>
           </div>
 
-          {/* Card 2 - Student Ambassador */}
+          {/* Card 2 - Role */}
           <div className="p-8 rounded-[2rem] bg-blue-50 border border-blue-100 flex flex-col justify-between text-blue-900">
-            <h2 className="text-[10px] font-bold uppercase tracking-[0.2em] text-blue-400">Role</h2>
+            <h2 className="text-[10px] font-bold uppercase tracking-[0.2em] text-blue-400">University Role</h2>
             <p className="text-xl font-black leading-tight uppercase italic">Student Ambassador</p>
             <p className="text-[10px] font-bold uppercase opacity-60 italic">Uni Bologna</p>
           </div>
 
-          {/* Card 3 - Science & Awards */}
+          {/* Card 3 - Science (Updated) */}
           <div className="p-8 rounded-[2rem] bg-white border border-slate-100 flex flex-col justify-between min-h-[200px]">
             <div className="text-3xl italic font-black text-slate-200">01.</div>
             <div>
               <h3 className="font-bold text-lg leading-tight uppercase">Science</h3>
-              <p className="text-xs text-slate-500 mt-1 italic">1st Place in National Astronomy Competition & Semifinalist at Climate Science Olympiad.</p>
+              <p className="text-xs text-slate-500 mt-1 italic">
+                1st Place National Astronomy Competition & 3rd Place at IX Republican Youth Research Conference "Al-Farabi".
+              </p>
             </div>
           </div>
 
-          {/* Card 4 - Economic Analyst */}
+          {/* Card 4 - Leadership/Founder (Updated) */}
           <div className="md:col-span-2 p-8 rounded-[2rem] bg-slate-50 border border-slate-200 flex flex-col justify-between group">
              <div className="flex justify-between items-start">
-               <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400 italic font-mono">Experience</span>
-               <span className="text-xs text-slate-400 uppercase font-mono">Akimat (Gov)</span>
+               <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400 italic font-mono">Leadership</span>
+               <span className="text-xs text-slate-400 uppercase font-mono">Founder</span>
              </div>
              <div>
-                <p className="text-xl font-bold leading-tight uppercase">Economic Analyst</p>
-                <p className="text-sm text-slate-500 mt-1 italic">Worked on SMART technology goals and agricultural training plans in Almaty region.</p>
+                <p className="text-xl font-bold leading-tight uppercase">NIS Football Association & Media League</p>
+                <p className="text-sm text-slate-500 mt-1 italic">
+                  Established 6 regional branches, managed 130+ participants and developed the league's digital ecosystem.
+                </p>
              </div>
           </div>
         </div>
 
-        {/* Footer with Contacts */}
-        <footer className="mt-32 pt-10 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="text-[10px] font-mono text-slate-400 uppercase tracking-[0.2em] font-bold">
+        {/* Footer */}
+        <footer className="mt-32 pt-10 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-400 font-bold">
+          <div className="text-[10px] font-mono uppercase tracking-[0.2em]">
             © {new Date().getFullYear()} Zhangir Yerkassym
           </div>
-          <div className="flex gap-8 font-black text-[11px] uppercase tracking-widest italic">
+          <div className="flex gap-8 text-[11px] uppercase tracking-widest italic font-black">
             <a href="https://linkedin.com/in/zhangir-yerkassym-b48aab375/" target="_blank" className="hover:text-blue-600 transition-colors border-b-2 border-transparent hover:border-blue-600">LinkedIn</a>
             <a href="mailto:zhangirerkasym@gmail.com" className="hover:text-blue-600 transition-colors border-b-2 border-transparent hover:border-blue-600">Contact</a>
           </div>
