@@ -23,13 +23,13 @@ export default function Publications() {
       title: "DOES STADIUM DESIGN INFLUENCE HOME ADVANTAGE?",
       type: "Sports Economics Research",
       link: "https://docs.google.com/document/d/12yRpuLwr4DTC_zljepQFwRndYe_aiZCuy_RfKRzZ19s/edit?usp=sharing",
-      description: "A quantitative study of Serie A, Bundesliga, and Ligue 1 stadiums. Analysis of how running tracks and fan proximity mediate the home advantage effect."
+      description: "A quantitative study on the nexus between stadium architecture and team performance across Serie A, Bundesliga, and Ligue 1. The research employs multi-variable analysis—integrating squad market value, fan proximity, and attendance—to identify whether modern stadium design truly amplifies the 'home advantage' or if economic factors remain the dominant driver."
     },
     {
       title: "ENHANCING STUDENT GOVERNANCE VIA ELECTION REFORM",
       type: "Political Science & Education",
       link: "https://docs.google.com/document/d/1HDlKMyaB9EeHCTIEoWn_7x1cUg-_jPj-X9BZAd3flPI/edit?usp=sharing",
-      description: "A proposal for a parliamentary model of school governance. Research on minimizing administrative interference and institutionalizing student leadership."
+      description: "A political science proposal for transitioning student governance to a parliamentary model. The research evaluates methods to minimize administrative interference and institutionalize student leadership, advocating for a shift from symbolic representation to a genuine democratic framework within educational institutions."
     }
   ];
 
