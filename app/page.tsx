@@ -82,10 +82,17 @@ export default function Home() {
           </div>
         </div>
         
-       <div className="md:col-span-1 p-8 rounded-[2rem] bg-slate-900 text-white flex flex-col justify-between group overflow-hidden relative min-h-[280px]">
+        {/* 1. Убираем justify-between, ставим justify-center для плотности */}
+<div className="md:col-span-1 p-8 rounded-[2rem] bg-slate-900 text-white flex flex-col justify-center relative min-h-[280px] group transition-all duration-500 hover:shadow-xl hover:shadow-blue-900/10">
+  
   <div className="relative z-10">
-    <h2 className="text-[11px] font-bold uppercase tracking-[0.3em] text-blue-400 mb-6">Expertise & Skills</h2>
-    <div className="flex flex-wrap gap-3">
+    {/* 2. Делаем заголовок чуть ярче и крупнее */}
+    <h2 className="text-[12px] font-black uppercase tracking-[0.3em] text-blue-400 mb-8 border-b border-white/10 pb-4 inline-block">
+      Expertise
+    </h2>
+    
+    {/* 3. Увеличиваем межстрочный интервал (gap-4) и размер текста */}
+    <div className="flex flex-wrap gap-x-3 gap-y-4">
       {[
         'Econometrics',
         'Data analysis',
@@ -97,7 +104,7 @@ export default function Home() {
       ].map((skill) => (
         <span 
           key={skill} 
-          className="text-[13px] px-4 py-2 border border-slate-700 rounded-xl font-bold uppercase tracking-tight hover:bg-blue-600 hover:border-blue-600 transition-all duration-300 cursor-default shadow-sm"
+          className="text-[14px] px-0 border-b-2 border-slate-700 font-bold uppercase tracking-tight hover:text-blue-400 hover:border-blue-400 transition-all duration-300 cursor-default"
         >
           {skill}
         </span>
@@ -105,15 +112,8 @@ export default function Home() {
     </div>
   </div>
 
-  {/* Нижняя часть блока с акцентом */}
-  <div className="relative z-10 mt-6">
-    <p className="text-[10px] text-slate-500 uppercase font-bold tracking-widest">Tools of the trade</p>
-  </div>
-
-  {/* Большое фоновое слово для заполнения пустоты */}
-  <div className="absolute -right-4 -bottom-6 text-9xl opacity-10 font-black italic select-none tracking-tighter leading-none">
-    DATA
-  </div>
+  {/* 4. Вместо надписей добавим легкий градиент в углу для объема */}
+  <div className="absolute top-0 right-0 w-32 h-32 bg-blue-600/10 blur-[50px] rounded-full"></div>
 </div>
 
         {/* Footer */}
