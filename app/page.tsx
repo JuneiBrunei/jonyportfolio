@@ -17,7 +17,7 @@ export default function Home() {
         </div>
 
         {/* Hero Section */}
-        <header className="mb-16">
+        <header className="mb-12">
           <h1 className="text-5xl font-black tracking-tight mb-4 uppercase italic">Zhangir Yerkassym</h1>
           <p className="text-xl text-slate-500 max-w-2xl leading-relaxed">
             1st year <span className="text-slate-900 font-semibold underline decoration-blue-500/20 underline-offset-4">Economics and Finance</span> student at Università di Bologna. 
@@ -26,7 +26,7 @@ export default function Home() {
         </header>
 
         {/* Navigation Buttons */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-12">
           <Link href="/publications" className="p-3 rounded-xl bg-slate-900 text-white text-center font-bold text-[11px] hover:bg-blue-600 transition-all uppercase tracking-tighter">
             Publications
           </Link>
@@ -42,12 +42,13 @@ export default function Home() {
         </div>
 
         {/* Контейнер для фото (PNG) — Теперь крупный и центрированный */}
-<div className="w-full flex justify-center py-6"> 
-  <div className="w-64 h-64 md:w-80 md:h-80 relative flex-shrink-0 bg-gradient-to-b from-slate-50 to-blue-50/50 rounded-[3rem] overflow-hidden border border-slate-100 shadow-inner">
+        <div className="md:col-span-1 p-4 rounded-[3rem] bg-white border border-slate-100 shadow-sm group overflow-hidden">
+  <div className="relative aspect-square w-full bg-[#f8f9fa] rounded-[2.5rem] overflow-hidden flex items-end justify-center">
+    {/* Фотография теперь занимает всё пространство и корректно масштабируется */}
     <img 
       src="/me-2.png" 
       alt="Zhangir Yerkassym"
-      className="w-full h-full object-contain object-bottom scale-110 translate-y-4 hover:scale-115 transition-transform duration-700 ease-in-out"
+      className="w-[90%] h-[90%] object-contain object-bottom transition-transform duration-700 group-hover:scale-110"
     />
   </div>
 </div>
