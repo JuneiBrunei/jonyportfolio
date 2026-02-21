@@ -81,13 +81,6 @@ export default function Home() {
              </div>
           </div>
         </div>
-        
-        {/* Minimal Contact Header */}
-        <div className="mt-20 mb-8">
-          <h2 className="text-xs font-bold text-slate-400 uppercase tracking-[0.3em]">
-            Contact Me
-          </h2>
-        </div>
 
         {/* Footer */}
         <footer className="mt-15 pt-10 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-400 font-bold">

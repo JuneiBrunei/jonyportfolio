@@ -7,14 +7,14 @@ export default function Publications() {
       source: "Ogni Alatau newspaper",
       date: "Sep 2024",
       link: "https://ognialatau.kz/news/cat-1/30382/",
-      description: "Analysis of inflation trends and their impact on regional economies in Kazakhstan."
+      description: "A comprehensive analysis of inflation trends and their impact on regional economies in Kazakhstan. Focused on socio-economic challenges and potential policy interventions to mitigate rising living costs."
     },
     {
       title: "FOOD PRODUCTS IN KAZAKHSTAN: CAUSES AND SOLUTIONS",
       source: "Central Asian Scientific Journal",
       date: "Sep 2024",
       link: "https://cajournal.kz/vol/2024/vol4(23).pdf",
-      description: "Research on price stabilization and agricultural supply chains in Central Asia."
+      description: "A multi-methodological study analyzing the escalation of food costs in Almaty (2022–2024). Based on field interviews with agricultural officials, farm owners, and business leaders to identify structural gaps in supply chains and the impact of regional geopolitical instability."
     }
   ];
 
