@@ -82,15 +82,16 @@ export default function Home() {
           </div>
         </div>
         
-       <div className="md:col-span-1 p-8 rounded-[2rem] bg-slate-900 text-white flex flex-col justify-between group overflow-hidden relative min-h-[280px]">
+       <div className="md:col-span-1 p-8 rounded-[2rem] bg-slate-900 text-white flex flex-col justify-center min-h-[250px] relative group">
   <div className="relative z-10">
-    <h2 className="text-[11px] font-bold uppercase tracking-[0.3em] text-blue-400 mb-6">Expertise & Skills</h2>
-    <div className="flex flex-wrap gap-3">
+    <h2 className="text-[14px] font-black text-blue-400 uppercase tracking-[0.2em] mb-8">
+      Expertise & Skills
+    </h2>
+    <div className="flex flex-wrap gap-4">
       {[
         'Econometrics',
-        'R & Stata',
-        'Financial Modeling',
-        'Policy Analysis',
+        'Data analysis',
+        'Political research',
         'Institutional Design',
         'Public Speaking',
         'SMM & Canva',
@@ -98,13 +99,14 @@ export default function Home() {
       ].map((skill) => (
         <span 
           key={skill} 
-          className="text-[13px] px-4 py-2 border border-slate-700 rounded-xl font-bold uppercase tracking-tight hover:bg-blue-600 hover:border-blue-600 transition-all duration-300 cursor-default shadow-sm"
+          className="text-[15px] font-bold uppercase tracking-tight text-white border-b-2 border-slate-700 hover:border-blue-500 transition-all duration-300 cursor-default pb-1"
         >
           {skill}
         </span>
       ))}
     </div>
   </div>
+</div>
 
   {/* Нижняя часть блока с акцентом */}
   <div className="relative z-10 mt-6">
