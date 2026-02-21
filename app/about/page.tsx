@@ -7,7 +7,7 @@ export default function AboutMe() {
         
         {/* Navigation */}
         <Link href="/" className="text-sm font-bold text-blue-600 uppercase tracking-[0.2em] mb-12 block hover:opacity-70 transition-opacity">
-          ← Back to Base
+          ← Back to Home
         </Link>
 
         <header className="mb-16">
