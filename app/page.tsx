@@ -82,9 +82,9 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="md:col-span-1 p-8 rounded-[2rem] bg-slate-900 text-white flex flex-col relative min-h-[280px]">
+        <div className="md:col-span-1 p-8 rounded-[2rem] bg-slate-900 text-white flex flex-col relative min-h-[220px]">
   <div className="relative z-10">
-    <h2 className="text-[11px] font-bold uppercase tracking-[0.3em] text-blue-400 mb-6">
+    <h2 className="text-[11px] font-bold uppercase tracking-[0.3em] text-white-400 mb-6">
       Expertise & Skills
     </h2>
     <div className="flex flex-wrap gap-3">
