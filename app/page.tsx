@@ -26,12 +26,12 @@ export default function Home() {
   <div className="flex flex-col md:flex-row gap-6 items-center">
     
     {/* 4. Фото: делаем НЕ квадратным, а чуть приплюснутым, чтобы поднять контент ниже */}
-    <div className="relative w-full md:w-[240px] h-[180px] md:h-[220px] rounded-[2rem] overflow-hidden bg-slate-100 border border-slate-100 shadow-sm flex-shrink-0">
+    <div className="relative w-full h-[300px] md:w-[280px] md:h-[280px] rounded-[2.5rem] overflow-hidden bg-slate-100 border border-slate-100 shadow-sm">
       <img 
-        src="/me.png" 
-        alt="Zhangir Yerkassym" 
-        className="w-full h-auto md:h-full object-cover object-top"
-      />
+  src="/me.png" 
+  alt="Zhangir Yerkassym" 
+  className="w-full h-full object-cover scale-110 -translate-y-[5%]" 
+/>
     </div>
 
     {/* Описание: убираем лишние межстрочные интервалы */}
