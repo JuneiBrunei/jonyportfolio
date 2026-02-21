@@ -6,7 +6,7 @@ export default function Home() {
       <main className="max-w-3xl mx-auto px-6 py-16 animate-fade-in">
         
         {/* 1. Убираем mb-12 у статуса полностью, ставим минимальный mb-4 */}
-<div className="flex justify-between items-center mb-4">
+<div className="flex justify-between items-center mb-8">
   <div className="flex items-center gap-2 bg-white border border-slate-100 px-3 py-1 rounded-full shadow-sm">
     <span className="relative flex h-2 w-2">
       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
@@ -18,7 +18,7 @@ export default function Home() {
 
 <header className="mb-6 flex flex-col gap-2">
   {/* 2. Имя: уменьшаем leading до предела и убираем mb */}
-  <h1 className="text-4xl md:text-6xl font-black tracking-tighter uppercase italic text-slate-900 leading-[0.7] -mb-1">
+  <h1 className="text-4xl md:text-6xl font-black tracking-tighter uppercase italic text-slate-900 leading-[0.8] mb-8">
     Zhangir Yerkassym
   </h1>
 
@@ -30,7 +30,7 @@ export default function Home() {
       <img 
         src="/me.png" 
         alt="Zhangir Yerkassym" 
-        className="w-full h-full object-cover object-top" 
+        className="w-full h-full object-cover object-[50%_15%]"
       />
     </div>
 
