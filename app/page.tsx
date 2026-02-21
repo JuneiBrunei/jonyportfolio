@@ -18,9 +18,9 @@ export default function Home() {
 
         <header className="mb-12 flex flex-col gap-8">
   {/* Имя сверху */}
-  <h1 className="text-5xl md:text-7xl font-black tracking-tighter uppercase italic text-slate-900 leading-[0.8]">
-    Zhangir Yerkassym
-  </h1>
+  <h1 className="text-4xl md:text-6xl font-black tracking-tighter uppercase italic text-slate-900 leading-[0.8]">
+  Zhangir Yerkassym
+</h1>
 
   {/* Контентная часть: выравнивание по центру (items-center) */}
   <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-center">
