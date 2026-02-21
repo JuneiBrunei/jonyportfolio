@@ -16,6 +16,15 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Контейнер для фото (PNG) */}
+    <div className="w-48 h-48 md:w-56 md:h-56 relative flex-shrink-0 bg-blue-50 rounded-[2.5rem] overflow-hidden">
+      <img 
+        src="me-2.png" // Убедись, что файл лежит в папке public
+        alt="Zhangir Yerkassym"
+        className="w-full h-full object-cover object-top scale-110 translate-y-2 hover:scale-125 transition-transform duration-500"
+      />
+    </div>
+
         {/* Hero Section */}
         <header className="mb-16">
           <h1 className="text-5xl font-black tracking-tight mb-4 uppercase italic">Zhangir Yerkassym</h1>
