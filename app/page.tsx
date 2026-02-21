@@ -17,29 +17,31 @@ export default function Home() {
         </div>
 
         <header className="mb-12 flex flex-col gap-8">
-  {/* Имя сверху и слева */}
-  <h1 className="text-5xl md:text-7xl font-black tracking-tighter uppercase italic text-slate-900 leading-none">
-    Zhangir Yerkassym
+  {/* Имя: всегда сверху, на всю ширину, с правильным межстрочным интервалом */}
+  <h1 className="text-5xl md:text-7xl font-black tracking-tighter uppercase italic text-slate-900 leading-[0.8] md:leading-[0.8]">
+    Zhangir <br className="md:hidden" /> Yerkassym
   </h1>
 
-  <div className="flex flex-col md:flex-row gap-8 items-start">
-    {/* Фотография слева */}
-    <div className="w-full md:w-64 flex-shrink-0">
-      <div className="relative aspect-square rounded-[2.5rem] overflow-hidden bg-slate-100 shadow-sm border border-slate-100">
-        <img 
-          src="/me.png" 
-          alt="Zhangir Yerkassym" 
-          className="w-full h-full object-cover object-top"
-        />
-      </div>
+  {/* Контентная часть: фото и описание */}
+  <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-start">
+    
+    {/* Фото: фиксированная ширина, чтобы не «гуляло» */}
+    <div className="relative aspect-square w-full md:w-[280px] rounded-[2.5rem] overflow-hidden bg-slate-100 shadow-sm border border-slate-100">
+      <img 
+        src="/me.png" 
+        alt="Zhangir Yerkassym" 
+        className="w-full h-full object-cover object-top"
+      />
     </div>
 
-    {/* Описание справа от фото */}
-    <div className="flex-grow pt-2">
-      <p className="text-xl md:text-2xl text-slate-500 max-w-2xl leading-relaxed">
-        1st year <span className="text-slate-900 font-semibold underline decoration-blue-500/20 underline-offset-8">Economics and Finance</span> student at Università di Bologna. 
+    {/* Описание: выровнено по верхней линии фото */}
+    <div className="flex flex-col justify-start pt-2">
+      <p className="text-xl md:text-2xl text-slate-500 max-w-2xl leading-relaxed font-medium">
+        1st year <span className="text-slate-900 font-bold underline decoration-blue-500/20 underline-offset-8">Economics and Finance</span> student at Università di Bologna. 
         Academic researcher and founder with a background in government analysis.
       </p>
+      
+      {/* Сюда можно будет потом бахнуть те самые кнопки */}
     </div>
   </div>
 </header>
