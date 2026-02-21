@@ -30,7 +30,7 @@ export default function Home() {
       <img 
         src="/me.png" 
         alt="Zhangir Yerkassym" 
-        className="w-full h-full object-cover object-[50%_15%]"
+        className="w-full h-auto md:h-full object-cover object-top"
       />
     </div>
 
