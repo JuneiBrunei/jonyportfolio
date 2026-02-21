@@ -81,27 +81,9 @@ export default function Home() {
              </div>
           </div>
         </div>
-        {/* Contact Section */}
-        <section className="mt-20 mb-10">
-          <h2 className="text-xs font-bold text-slate-400 uppercase tracking-[0.3em] mb-8">Contact Me</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <a href="mailto:zhangirerkasym@gmail.com" className="p-4 rounded-2xl bg-blue-600 text-white text-center hover:bg-slate-900 transition-all shadow-lg shadow-blue-100 flex flex-col items-center gap-2">
-              <span className="text-xs font-bold uppercase tracking-tighter">Email</span>
-            </a>
-            <a href="https://t.me/Jonyyverk" target="_blank" className="p-4 rounded-2xl bg-white border border-slate-100 text-center hover:border-blue-400 transition-all flex flex-col items-center gap-2 shadow-sm">
-              <span className="text-xs font-bold uppercase tracking-tighter">Telegram</span>
-            </a>
-            <a href="https://www.instagram.com/jonyyv.erk/" target="_blank" className="p-4 rounded-2xl bg-white border border-slate-100 text-center hover:border-pink-400 transition-all flex flex-col items-center gap-2 shadow-sm">
-              <span className="text-xs font-bold uppercase tracking-tighter">Instagram</span>
-            </a>
-            <a href="https://linkedin.com/in/zhangir-yerkassym-b48aab375/" target="_blank" className="p-4 rounded-2xl bg-white border border-slate-100 text-center hover:border-blue-600 transition-all flex flex-col items-center gap-2 shadow-sm">
-              <span className="text-xs font-bold uppercase tracking-tighter">LinkedIn</span>
-            </a>
-          </div>
-        </section>
-        
+
         {/* Footer */}
-        <footer className="mt-32 pt-10 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-400 font-bold">
+        <footer className="mt-20 pt-10 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-400 font-bold">
           <div className="text-[10px] font-mono uppercase tracking-[0.2em]">
             © {new Date().getFullYear()} Zhangir Yerkassym
           </div>
