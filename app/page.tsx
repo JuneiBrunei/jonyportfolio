@@ -16,7 +16,7 @@ export default function Home() {
           </div>
         </div>
 
-        <header className="mb-12 flex flex-col gap-8">
+        <header className="mb-4 flex flex-col gap-4">
   {/* Имя сверху */}
   <h1 className="text-4xl md:text-6xl font-black tracking-tighter uppercase italic text-slate-900 leading-[0.8]">
   Zhangir Yerkassym
