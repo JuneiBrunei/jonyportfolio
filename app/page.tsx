@@ -5,8 +5,8 @@ export default function Home() {
     <div className="min-h-screen bg-[#fcfcfc] text-slate-900 font-sans selection:bg-blue-100">
       <main className="max-w-3xl mx-auto px-6 py-16 animate-fade-in">
         
-        {/* 1. Уменьшил mb-12 до mb-6, чтобы поднять всё выше */}
-<div className="flex justify-between items-center mb-6">
+        {/* 1. Убираем mb-12 у статуса полностью, ставим минимальный mb-4 */}
+<div className="flex justify-between items-center mb-4">
   <div className="flex items-center gap-2 bg-white border border-slate-100 px-3 py-1 rounded-full shadow-sm">
     <span className="relative flex h-2 w-2">
       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
@@ -16,17 +16,17 @@ export default function Home() {
   </div>
 </div>
 
-<header className="mb-8 flex flex-col gap-4">
-  {/* Имя сверху */}
-  <h1 className="text-4xl md:text-6xl font-black tracking-tighter uppercase italic text-slate-900 leading-[0.8]">
+<header className="mb-6 flex flex-col gap-2">
+  {/* 2. Имя: уменьшаем leading до предела и убираем mb */}
+  <h1 className="text-4xl md:text-6xl font-black tracking-tighter uppercase italic text-slate-900 leading-[0.7] -mb-1">
     Zhangir Yerkassym
   </h1>
 
-  {/* 2. items-center выровняет текст по середине высоты фотки */}
-  <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-center">
+  {/* 3. Контент: меняем grid на flex для лучшего контроля плотности */}
+  <div className="flex flex-col md:flex-row gap-6 items-center">
     
-    {/* 3. object-top уберет пустоту над головой */}
-    <div className="relative aspect-square w-full md:w-[280px] rounded-[2.5rem] overflow-hidden bg-slate-100 shadow-sm border border-slate-100">
+    {/* 4. Фото: делаем НЕ квадратным, а чуть приплюснутым, чтобы поднять контент ниже */}
+    <div className="relative w-full md:w-[240px] h-[180px] md:h-[220px] rounded-[2rem] overflow-hidden bg-slate-100 border border-slate-100 shadow-sm flex-shrink-0">
       <img 
         src="/me.png" 
         alt="Zhangir Yerkassym" 
@@ -34,10 +34,10 @@ export default function Home() {
       />
     </div>
 
-    {/* Описание */}
-    <div className="flex flex-col">
-      <p className="text-xl md:text-2xl text-slate-500 max-w-2xl leading-relaxed font-medium">
-        1st year <span className="text-slate-900 font-bold underline decoration-blue-500/20 underline-offset-8">Economics and Finance</span> student at Università di Bologna. 
+    {/* Описание: убираем лишние межстрочные интервалы */}
+    <div className="max-w-2xl">
+      <p className="text-lg md:text-xl text-slate-500 leading-snug font-medium">
+        1st year <span className="text-slate-900 font-bold underline decoration-blue-500/20 underline-offset-4">Economics and Finance</span> student at Università di Bologna. 
         Academic researcher and founder with a background in government analysis.
       </p>
     </div>
