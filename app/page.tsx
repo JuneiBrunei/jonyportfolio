@@ -17,13 +17,29 @@ export default function Home() {
         </div>
 
         {/* Hero Section */}
-        <header className="mb-12">
-          <h1 className="text-5xl font-black tracking-tight mb-4 uppercase italic">Zhangir Yerkassym</h1>
-          <p className="text-xl text-slate-500 max-w-2xl leading-relaxed">
-            1st year <span className="text-slate-900 font-semibold underline decoration-blue-500/20 underline-offset-4">Economics and Finance</span> student at Università di Bologna. 
-            Academic researcher and founder with a background in government analysis.
-          </p>
-        </header>
+<header className="mb-12 flex flex-col md:flex-row items-center md:items-start gap-8">
+  
+  {/* Фотография слева */}
+  <div className="w-32 h-32 md:w-44 md:h-44 flex-shrink-0 relative">
+    <div className="absolute inset-0 bg-blue-500/10 rounded-[2.5rem] rotate-6 group-hover:rotate-0 transition-transform duration-500"></div>
+    <img 
+      src="/me.png" 
+      alt="Zhangir Yerkassym" 
+      className="relative z-10 w-full h-full object-cover rounded-[2.5rem] border-2 border-slate-100 shadow-sm"
+    />
+  </div>
+
+  {/* Текст справа */}
+  <div className="flex flex-col">
+    <h1 className="text-5xl font-black tracking-tight mb-4 uppercase italic text-center md:text-left">
+      Zhangir Yerkassym
+    </h1>
+    <p className="text-xl text-slate-500 max-w-2xl leading-relaxed text-center md:text-left">
+      1st year <span className="text-slate-900 font-semibold underline decoration-blue-500/20 underline-offset-4">Economics and Finance</span> student at Università di Bologna. 
+      Academic researcher and founder with a background in government analysis.
+    </p>
+  </div>
+</header>
 
         {/* Navigation Buttons */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-12">
@@ -40,45 +56,6 @@ export default function Home() {
             About Me
           </Link>
         </div>
-
-        <div className="md:col-span-2 p-8 rounded-[3rem] bg-white border border-slate-100 shadow-sm flex flex-col md:flex-row items-center gap-8">
-  
-  {/* Фотография: небольшая и аккуратная, как в начале */}
-  <div className="w-32 h-32 md:w-40 md:h-40 relative flex-shrink-0 bg-slate-50 rounded-[2.5rem] overflow-hidden border border-slate-100">
-    <img 
-      src="/me.png" 
-      alt="Zhangir Yerkassym"
-      className="w-full h-full object-cover object-top scale-105 hover:scale-110 transition-transform duration-500"
-    />
-  </div>
-
-  {/* Правая часть: Имя + Кнопки в два ряда */}
-  <div className="flex flex-col flex-grow">
-    <div className="mb-6 text-center md:text-left">
-      <h1 className="text-3xl font-black italic uppercase tracking-tighter text-slate-900">
-        Zhangir Yerkassym
-      </h1>
-      <p className="text-[10px] font-bold text-blue-500 uppercase tracking-[0.2em]">University of Bologna</p>
-    </div>
-
-    {/* Кнопки в два ряда (сетка 2x2) */}
-    <div className="grid grid-cols-2 gap-3">
-      {[
-        { label: 'Economics', color: 'bg-blue-50 text-blue-700' },
-        { label: 'Research', color: 'bg-slate-900 text-white' },
-        { label: 'Leadership', color: 'bg-slate-50 text-slate-600' },
-        { label: 'Data', color: 'bg-blue-600 text-white' }
-      ].map((btn, i) => (
-        <div 
-          key={i} 
-          className={`py-3 px-4 rounded-2xl text-[11px] font-black uppercase tracking-widest text-center shadow-sm hover:opacity-80 transition-opacity cursor-default ${btn.color}`}
-        >
-          {btn.label}
-        </div>
-      ))}
-    </div>
-  </div>
-</div>
 
         {/* Bento Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
