@@ -30,7 +30,7 @@ export default function Home() {
       <img 
   src="/me.png" 
   alt="Zhangir Yerkassym" 
-  className="w-full h-full object-cover scale-110 -translate-y-[5%]" 
+  className="w-full h-full object-cover scale-[1.05] -translate-y-[2%] md:scale-110 md:-translate-y-[5%]"
 />
     </div>
 
