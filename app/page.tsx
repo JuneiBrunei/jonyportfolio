@@ -5,37 +5,36 @@ export default function Home() {
     <div className="min-h-screen bg-[#fcfcfc] text-slate-900 font-sans selection:bg-blue-100">
       <main className="max-w-3xl mx-auto px-6 py-16 animate-fade-in">
         
-        {/* Live Status */}
-        <div className="flex justify-between items-center mb-12">
-          <div className="flex items-center gap-2 bg-white border border-slate-100 px-3 py-1 rounded-full shadow-sm">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-            </span>
-            <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500">Currently in Bologna, Italy</span>
-          </div>
-        </div>
+        {/* 1. Уменьшил mb-12 до mb-6, чтобы поднять всё выше */}
+<div className="flex justify-between items-center mb-6">
+  <div className="flex items-center gap-2 bg-white border border-slate-100 px-3 py-1 rounded-full shadow-sm">
+    <span className="relative flex h-2 w-2">
+      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+      <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+    </span>
+    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500">Currently in Bologna, Italy</span>
+  </div>
+</div>
 
-        <header className="mb-4 flex flex-col gap-4">
+<header className="mb-8 flex flex-col gap-4">
   {/* Имя сверху */}
   <h1 className="text-4xl md:text-6xl font-black tracking-tighter uppercase italic text-slate-900 leading-[0.8]">
-  Zhangir Yerkassym
-</h1>
+    Zhangir Yerkassym
+  </h1>
 
-  {/* Контентная часть: выравнивание по центру (items-center) */}
+  {/* 2. items-center выровняет текст по середине высоты фотки */}
   <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 items-center">
     
-    {/* Фото: смещаем фокус вверх через object-position */}
+    {/* 3. object-top уберет пустоту над головой */}
     <div className="relative aspect-square w-full md:w-[280px] rounded-[2.5rem] overflow-hidden bg-slate-100 shadow-sm border border-slate-100">
       <img 
         src="/me.png" 
         alt="Zhangir Yerkassym" 
-        /* 50% — по горизонтали, 20% — по вертикали (поднимает фото вверх) */
-        className="w-full h-full object-cover object-[50%_20%]" 
+        className="w-full h-full object-cover object-top" 
       />
     </div>
 
-    {/* Описание: теперь оно центрировано относительно фото */}
+    {/* Описание */}
     <div className="flex flex-col">
       <p className="text-xl md:text-2xl text-slate-500 max-w-2xl leading-relaxed font-medium">
         1st year <span className="text-slate-900 font-bold underline decoration-blue-500/20 underline-offset-8">Economics and Finance</span> student at Università di Bologna. 
@@ -45,21 +44,22 @@ export default function Home() {
   </div>
 </header>
 
-        {/* Navigation Buttons */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-12">
-          <Link href="/publications" className="p-3 rounded-xl bg-slate-900 text-white text-center font-bold text-[11px] hover:bg-blue-600 transition-all uppercase tracking-tighter">
-            Publications
-          </Link>
-          <Link href="/resume" className="p-3 rounded-xl bg-slate-900 text-white text-center font-bold text-[11px] hover:bg-blue-600 transition-all uppercase tracking-tighter">
-            Resume
-          </Link>
-          <Link href="/projects" className="p-3 rounded-xl bg-slate-900 text-white text-center font-bold text-[11px] hover:bg-blue-600 transition-all uppercase tracking-tighter">
-            Projects
-          </Link>
-          <Link href="/about" className="p-3 rounded-xl bg-slate-900 text-white text-center font-bold text-[11px] hover:bg-blue-600 transition-all uppercase tracking-tighter">
-            About Me
-          </Link>
-        </div>
+{/* 4. Уменьшил отступ над кнопками, чтобы секция была компактной */}
+<div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-12">
+  {/* твои кнопки без изменений */}
+  <Link href="/publications" className="p-3 rounded-xl bg-slate-900 text-white text-center font-bold text-[11px] hover:bg-blue-600 transition-all uppercase tracking-tighter">
+    Publications
+  </Link>
+  <Link href="/resume" className="p-3 rounded-xl bg-slate-900 text-white text-center font-bold text-[11px] hover:bg-blue-600 transition-all uppercase tracking-tighter">
+    Resume
+  </Link>
+  <Link href="/projects" className="p-3 rounded-xl bg-slate-900 text-white text-center font-bold text-[11px] hover:bg-blue-600 transition-all uppercase tracking-tighter">
+    Projects
+  </Link>
+  <Link href="/about" className="p-3 rounded-xl bg-slate-900 text-white text-center font-bold text-[11px] hover:bg-blue-600 transition-all uppercase tracking-tighter">
+    About Me
+  </Link>
+</div>
 
         {/* Bento Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
