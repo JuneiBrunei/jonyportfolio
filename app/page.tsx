@@ -81,33 +81,42 @@ export default function Home() {
              </div>
           </div>
         </div>
-        <div className="p-8 rounded-[2rem] bg-slate-900 text-white flex flex-col justify-between group overflow-hidden relative min-h-[200px]">
+        
+       <div className="md:col-span-1 p-8 rounded-[2rem] bg-slate-900 text-white flex flex-col justify-between group overflow-hidden relative min-h-[280px]">
   <div className="relative z-10">
-    <h2 className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500 mb-4">Skill Set</h2>
-    <div className="flex flex-wrap gap-2">
+    <h2 className="text-[11px] font-bold uppercase tracking-[0.3em] text-blue-400 mb-6">Expertise & Skills</h2>
+    <div className="flex flex-wrap gap-3">
       {[
-        'R Programming', 
-        'Stata', 
-        'Public Speaking', 
-        'Policy Analysis', 
-        'SMM', 
-        'Canva Design', 
-        'Strategic Management'
+        'Econometrics',
+        'R & Stata',
+        'Financial Modeling',
+        'Policy Analysis',
+        'Institutional Design',
+        'Public Speaking',
+        'SMM & Canva',
+        'Strategic Mgmt'
       ].map((skill) => (
         <span 
           key={skill} 
-          className="text-[10px] px-2 py-1 border border-slate-700 rounded-md font-mono uppercase tracking-tighter hover:bg-white hover:text-black transition-all duration-300 cursor-default"
+          className="text-[13px] px-4 py-2 border border-slate-700 rounded-xl font-bold uppercase tracking-tight hover:bg-blue-600 hover:border-blue-600 transition-all duration-300 cursor-default shadow-sm"
         >
           {skill}
         </span>
       ))}
     </div>
   </div>
-  {/* Фоновое слово для стиля */}
-  <div className="absolute -right-2 -bottom-4 text-7xl opacity-10 font-black italic select-none tracking-tighter">
-    SKILLS
+
+  {/* Нижняя часть блока с акцентом */}
+  <div className="relative z-10 mt-6">
+    <p className="text-[10px] text-slate-500 uppercase font-bold tracking-widest">Tools of the trade</p>
+  </div>
+
+  {/* Большое фоновое слово для заполнения пустоты */}
+  <div className="absolute -right-4 -bottom-6 text-9xl opacity-10 font-black italic select-none tracking-tighter leading-none">
+    DATA
   </div>
 </div>
+
         {/* Footer */}
         <footer className="mt-15 pt-10 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-400 font-bold">
           <div className="text-[10px] font-mono uppercase tracking-[0.2em]">
