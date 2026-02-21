@@ -16,28 +16,31 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Hero Section */}
-<header className="mb-12 flex flex-col md:flex-row items-center md:items-start gap-8">
-  
-  {/* Фотография слева */}
-  <div className="w-32 h-32 md:w-44 md:h-44 flex-shrink-0 relative">
-    <div className="absolute inset-0 bg-blue-500/10 rounded-[2.5rem] rotate-6 group-hover:rotate-0 transition-transform duration-500"></div>
-    <img 
-      src="/me.png" 
-      alt="Zhangir Yerkassym" 
-      className="relative z-10 w-full h-full object-cover rounded-[2.5rem] border-2 border-slate-100 shadow-sm"
-    />
-  </div>
+        <header className="mb-12 flex flex-col gap-8">
+  {/* Имя сверху и слева */}
+  <h1 className="text-5xl md:text-7xl font-black tracking-tighter uppercase italic text-slate-900 leading-none">
+    Zhangir Yerkassym
+  </h1>
 
-  {/* Текст справа */}
-  <div className="flex flex-col">
-    <h1 className="text-5xl font-black tracking-tight mb-4 uppercase italic text-center md:text-left">
-      Zhangir Yerkassym
-    </h1>
-    <p className="text-xl text-slate-500 max-w-2xl leading-relaxed text-center md:text-left">
-      1st year <span className="text-slate-900 font-semibold underline decoration-blue-500/20 underline-offset-4">Economics and Finance</span> student at Università di Bologna. 
-      Academic researcher and founder with a background in government analysis.
-    </p>
+  <div className="flex flex-col md:flex-row gap-8 items-start">
+    {/* Фотография слева */}
+    <div className="w-full md:w-64 flex-shrink-0">
+      <div className="relative aspect-square rounded-[2.5rem] overflow-hidden bg-slate-100 shadow-sm border border-slate-100">
+        <img 
+          src="/me.png" 
+          alt="Zhangir Yerkassym" 
+          className="w-full h-full object-cover object-top"
+        />
+      </div>
+    </div>
+
+    {/* Описание справа от фото */}
+    <div className="flex-grow pt-2">
+      <p className="text-xl md:text-2xl text-slate-500 max-w-2xl leading-relaxed">
+        1st year <span className="text-slate-900 font-semibold underline decoration-blue-500/20 underline-offset-8">Economics and Finance</span> student at Università di Bologna. 
+        Academic researcher and founder with a background in government analysis.
+      </p>
+    </div>
   </div>
 </header>
 
