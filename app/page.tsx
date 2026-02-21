@@ -16,15 +16,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Контейнер для фото (PNG) */}
-    <div className="w-48 h-48 md:w-56 md:h-56 relative flex-shrink-0 bg-blue-50 rounded-[2.5rem] overflow-hidden">
-      <img 
-        src="me-2.png" // Убедись, что файл лежит в папке public
-        alt="Zhangir Yerkassym"
-        className="w-full h-full object-cover object-top scale-110 translate-y-2 hover:scale-125 transition-transform duration-500"
-      />
-    </div>
-
         {/* Hero Section */}
         <header className="mb-16">
           <h1 className="text-5xl font-black tracking-tight mb-4 uppercase italic">Zhangir Yerkassym</h1>
@@ -49,6 +40,17 @@ export default function Home() {
             About Me
           </Link>
         </div>
+
+        {/* Контейнер для фото (PNG) — Теперь крупный и центрированный */}
+<div className="w-full flex justify-center py-6"> 
+  <div className="w-64 h-64 md:w-80 md:h-80 relative flex-shrink-0 bg-gradient-to-b from-slate-50 to-blue-50/50 rounded-[3rem] overflow-hidden border border-slate-100 shadow-inner">
+    <img 
+      src="/me-2.png" 
+      alt="Zhangir Yerkassym"
+      className="w-full h-full object-contain object-bottom scale-110 translate-y-4 hover:scale-115 transition-transform duration-700 ease-in-out"
+    />
+  </div>
+</div>
 
         {/* Bento Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
