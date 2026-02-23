@@ -66,7 +66,7 @@ export default function Resume() {
 </li>
 <li className="flex gap-3">
 <span className="text-blue-500 font-bold">/</span>
-<span>Managed school-wide feedback loops via a digital suggestion box and sociological surveys.</span>
+<span>Participated in the “Lead to Inspire-2024” Republican Forum of Student Council Leaders in Kyzylorda.</span>
 </li>
 <li className="flex gap-3">
 <span className="text-blue-500 font-bold">/</span>
