@@ -28,7 +28,7 @@ export default function Home() {
     {/* 4. Фото: делаем НЕ квадратным, а чуть приплюснутым, чтобы поднять контент ниже */}
     <div className="relative w-full h-[300px] md:w-[280px] md:h-[280px] rounded-[2.5rem] overflow-hidden bg-slate-100 border border-slate-100 shadow-sm">
       <img 
-  src="/me.png" 
+  src="/me1.png" 
   alt="Zhangir Yerkassym" 
   className="w-full h-full object-cover scale-[1.05] -translate-y-0 md:scale-110 md:-translate-y-[5%]"
 />
