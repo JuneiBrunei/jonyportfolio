@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+// @ts-expect-error Next.js loads global CSS at runtime; its declaration is provided by the build tool.
 import "./globals.css";
 
 const geistSans = Geist({
@@ -17,6 +18,11 @@ export const metadata: Metadata = {
   description: "Economics and Finance student at Università di Bologna",
   verification: {
     google: "_idbf5d7Gn3BBKcSsd23bg8Ew8643idePhTSZ856yXc", 
+  },
+  // Добавляем запрет на индексацию поисковиками:
+  robots: {
+    index: false,
+    follow: false,
   },
 };
 
