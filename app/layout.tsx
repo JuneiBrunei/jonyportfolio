@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-// @ts-expect-error Next.js loads global CSS at runtime; its declaration is provided by the build tool.
 import "./globals.css";
 
 const geistSans = Geist({
@@ -19,7 +18,7 @@ export const metadata: Metadata = {
   verification: {
     google: "_idbf5d7Gn3BBKcSsd23bg8Ew8643idePhTSZ856yXc", 
   },
-  // Добавляем запрет на индексацию поисковиками:
+  
   robots: {
     index: false,
     follow: false,
@@ -34,7 +33,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Указываем favicon */}
         <link rel="icon" href="/favicon-new.ico" />
       </head>
       <body
