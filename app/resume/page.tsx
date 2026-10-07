@@ -70,7 +70,7 @@ export default function Resume() {
 </li>
 <li className="flex gap-3">
 <span className="text-blue-500 font-bold">/</span>
-<span>Supervised class communities (Shanyraks), coordinated point-based competition systems and administrative events.</span>
+<span>Supervised class communities (Shanyraqs), coordinated point-based competition systems and administrative events.</span>
 </li>
 <li className="flex gap-3 items-center">
 <span className="text-blue-500 font-bold">/</span>
